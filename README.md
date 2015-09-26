@@ -1,4 +1,4 @@
 # tricks
 Dicas, lembretes e macetes
 
-[PHP](https://www.github.com)
+[PHP](/alhaag/tricks/blob/master/php/index.MD)
