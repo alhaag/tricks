@@ -1,7 +1,7 @@
 # tricks
 Dicas, lembretes e macetes
 
-[Docker](docker/index.MD)
+[Docker](/docker/index.MD)
 
 [Linux](linux/index.MD)
 
