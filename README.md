@@ -1,8 +1,8 @@
 # tricks
 Dicas, lembretes e macetes
 
-[Docker](/docker/index.MD)
+[Docker](/docker/index.md)
 
-[Linux](linux/index.MD)
+[Linux](linux/index.md)
 
-[PHP](php/index.MD)
+[PHP](php/index.md)
