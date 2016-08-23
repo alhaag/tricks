@@ -1,5 +1,13 @@
 # Linux
 
+### File system
+Formatar pendrive. Para um pendrive montado em /dev/sdb1, executar:
+```shell
+$ umount /dev/sdb1
+$ mkfs.vfat /dev/sdb1
+```
+---
+
 ### Rede
 Criar link para acesso a outra rede:
 ```shell
