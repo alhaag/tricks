@@ -93,5 +93,5 @@ $ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
 ```
 Extrair arquivo compactado em diretório específico:
 ```shell
-$ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
+$ tar xvf /home/file.tgz -C /tmp
 ```
