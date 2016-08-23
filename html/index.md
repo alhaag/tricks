@@ -3,6 +3,6 @@
 ### Caracteres
 | Caracter      | HTML entity   |
 | ------------- |:-------------:|
-| ã             | &atilde;      |
+| ã             | '&atilde;'      |
 | á             | &aacute;      |
 | ê             | &ecirc;       |
