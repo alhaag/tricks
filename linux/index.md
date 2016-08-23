@@ -1,16 +1,5 @@
 # Linux
 
-### Compactação de arquivos (tar)
-Compactar lista de arquivos:
-```shell
-$ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
-```
-Extrair arquivo compactado em diretório específico:
-```shell
-$ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
-```
----
-
 ### Rede (config)
 Criar link para acesso a outra rede:
 ```shell
@@ -35,6 +24,22 @@ $ tcpdump -i any -s0 -w /tmp/dump.cap
 ```
 ---
 
+### SED
+Manipulação de conteúdo de arquivos com sed.
+
+Utilização básica:
+
+```shell
+$ sed -i 's/<search>/<replace>/g' <file>
+```
+Substituição de diretiva de configuração do Nginx:
+```shell
+$ sed -i 's/location \/atualizador {\nproxy_pass http://web-tomcat;\n}/TESTETESTE/g' nginx.conf
+```
+Mais exemplos em [Só SED](http://thobias.org/doc/sosed.html)
+
+---
+
 ### SSH
 Liberar acesso por chave ssh
 ```shell
@@ -46,4 +51,15 @@ $ ssh-copy-id <user>@<ip>
 Loop de execução de comando por timer definido
 ```shell
 $ watch --interval=0.0 ls -lh
+```
+---
+
+### TAR compactação de arquivos
+Compactar lista de arquivos:
+```shell
+$ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
+```
+Extrair arquivo compactado em diretório específico:
+```shell
+$ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
 ```
