@@ -2,11 +2,21 @@
 
 ### File system
 
-Listar dispositivos:
+Listar dispositivos de armazenamento:
 ```shell
 $ sudo fdisk -l
 - ou
 $ mount
+```
+
+Verificar tamanho do diretorio corrente:
+```shell
+$ du -sh
+```
+
+Contar arquivos recursivamente:
+```shell
+$ find . -type f | wc -l
 ```
 
 Formatar pendrive. Para um pendrive montado em /dev/sdb1, executar:
