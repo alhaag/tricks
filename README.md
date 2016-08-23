@@ -5,8 +5,8 @@ Dicas, lembretes e macetes sobre ferramentas voltadas para o desenvolvimento de 
 
 [Linux](linux/index.md)
   * [Rede](linux/index.md#rede)
-  * [TAR](linux/index.md#sed)
-  * [TAR](linux/index.md#ssh)
+  * [SED](linux/index.md#sed)
+  * [SSH](linux/index.md#ssh)
   * [TAR](linux/index.md#tar)
 
 [PHP](php/index.md)
