@@ -9,6 +9,7 @@ Dicas, lembretes e macetes sobre ferramentas voltadas para o desenvolvimento de 
 [Docker](/docker/index.md)
 
 [Linux](linux/index.md)
+  * [File system](linux/index.md#file-system)
   * [Rede](linux/index.md#rede)
   * [SED](linux/index.md#sed)
   * [SSH](linux/index.md#ssh)
