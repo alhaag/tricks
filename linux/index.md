@@ -1,9 +1,13 @@
 # Linux
 
-### watch
-Loop de execução de comando por timer definido
+### Compactação de arquivos (tar)
+Compactar lista de arquivos:
 ```shell
-$ watch --interval=0.0 ls -lh
+$ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
+```
+Extrair arquivo compactado em diretório específico:
+```shell
+$ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
 ```
 ---
 
@@ -31,3 +35,9 @@ Liberar acesso por chave ssh
 $ ssh-copy-id <user>@<ip>
 ```
 ---
+
+### watch
+Loop de execução de comando por timer definido
+```shell
+$ watch --interval=0.0 ls -lh
+```
