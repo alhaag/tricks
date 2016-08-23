@@ -1,6 +1,14 @@
 # Linux
 
 ### File system
+
+Listar dispositivos:
+```shell
+$ sudo fdisk -l
+- ou
+$ mount
+```
+
 Formatar pendrive. Para um pendrive montado em /dev/sdb1, executar:
 ```shell
 $ umount /dev/sdb1
