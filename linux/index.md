@@ -56,6 +56,7 @@ $ tcpdump -i any -s0 -w /tmp/dump.cap
 **-s0** gera capturas ilimitadas
 
 **-port 80** idica a porta que deve ser capturada
+
 ---
 
 ### SED
