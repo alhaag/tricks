@@ -46,14 +46,16 @@ $ netstat -npa | grep 80
 - ou
 $ netstat -atunp | grep 80
 ```
-Capturar pacotes de rede para analise no Wireshark
+Capturar pacotes de rede para analise no Wireshark:
 
--i any =  qualquer interface de rede
-
--s0 =  gera capturas ilimitadas
 ```shell
 $ tcpdump -i any -s0 -w /tmp/dump.cap
 ```
+**-i any** qualquer interface de rede
+
+**-s0** gera capturas ilimitadas
+
+**-port 80** idica a porta que deve ser capturada
 ---
 
 ### SED
