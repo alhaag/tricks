@@ -54,7 +54,7 @@ $ watch --interval=0.0 ls -lh
 ```
 ---
 
-### TAR compactação de arquivos
+### TAR
 Compactar lista de arquivos:
 ```shell
 $ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
