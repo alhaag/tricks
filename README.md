@@ -1,5 +1,5 @@
-# tricks
-Dicas, lembretes e macetes
+# Tricks
+Dicas, lembretes e macetes sobre ferramentas voltadas para o desenvolvimento de software.
 
 [Docker](/docker/index.md)
 
