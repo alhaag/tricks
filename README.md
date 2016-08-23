@@ -1,5 +1,5 @@
 # Tricks
-Dicas, lembretes e macetes sobre ferramentas voltadas para o desenvolvimento de software.
+Documentação pessoal com dicas, lembretes e macetes sobre ferramentas voltadas para o desenvolvimento de software e linguagens de programação.
 
 [Data bases](/db/index.md)
   * [DB2](db/index.md#db2)
