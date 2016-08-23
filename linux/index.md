@@ -44,8 +44,8 @@ $ ssh-copy-id <user>@<ip>
 ```
 ---
 
-### watch
-Loop de execução de comando por timer definido
+### Watch
+Loop de execução de comando por timer definido. Útil para verificar alterações em tempo real:
 ```shell
 $ watch --interval=0.0 ls -lh
 ```
