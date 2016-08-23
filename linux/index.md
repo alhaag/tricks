@@ -6,6 +6,13 @@ Formatar pendrive. Para um pendrive montado em /dev/sdb1, executar:
 $ umount /dev/sdb1
 $ mkfs.vfat /dev/sdb1
 ```
+
+Copiar imagem ISO para o pendrive
+```shell
+$ umount /dev/sdb1
+$ sudo dd if=/dev/sdb1 of=file.iso
+```
+
 ---
 
 ### Rede
