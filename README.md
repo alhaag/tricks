@@ -8,6 +8,8 @@ Documentação pessoal com dicas, lembretes e macetes sobre ferramentas voltadas
  
 [Docker](/docker/index.md)
 
+[GIT](/git/index.md)
+
 [Linux](linux/index.md)
   * [File system](linux/index.md#file-system)
   * [Rede](linux/index.md#rede)
@@ -17,9 +19,11 @@ Documentação pessoal com dicas, lembretes e macetes sobre ferramentas voltadas
 
 [HTML](html/index.md)
 
+[NodeJs](node/index.md)
+
 [PHP](php/index.md)
 
-[NodeJs](node/index.md)
+[SVN](/svn/index.md)
 
 -
 
