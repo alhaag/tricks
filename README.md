@@ -15,6 +15,8 @@ Documentação pessoal com dicas, lembretes e macetes sobre ferramentas voltadas
   * [SSH](linux/index.md#ssh)
   * [TAR](linux/index.md#tar)
 
+[HTML](html/index.md)
+
 [PHP](php/index.md)
 
 [NodeJs](node/index.md)
