@@ -11,6 +11,12 @@ $ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
 ```
 ---
 
+### Rede (config)
+Criar link para acesso a outra rede:
+```shell
+$ sudo ifconfig eth0:0 10.0.0.5
+```
+
 ### Rede (debug)
 Verificar listen ports
 ```shell
