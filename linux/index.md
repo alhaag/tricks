@@ -1,4 +1,4 @@
-# Linux
+#Linux
 
 ### Rede (config)
 Criar link para acesso a outra rede:
