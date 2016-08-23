@@ -4,7 +4,7 @@ Dicas, lembretes e macetes sobre ferramentas voltadas para o desenvolvimento de 
 [Docker](/docker/index.md)
 
 [Linux](linux/index.md)
-  * [TAR](linux/index.md#tar)
+  * [TAR](linux/index.md#TAR compactação de arquivos)
 
 [PHP](php/index.md)
 
