@@ -98,3 +98,8 @@ Extrair arquivo compactado em diretório específico:
 ```shell
 $ tar xvf /home/file.tgz -C /tmp
 ```
+
+Extrair um arquivo específico do tarball:
+```shell
+$ tar xvf /home/file.tgz /path/file.txt
+```
