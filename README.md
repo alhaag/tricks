@@ -10,6 +10,8 @@ Documentação pessoal com dicas, lembretes e macetes sobre ferramentas voltadas
 
 [GIT](/git/index.md)
 
+[HTML](html/index.md)
+
 [Linux](linux/index.md)
   * [File system](linux/index.md#file-system)
   * [Rede](linux/index.md#rede)
@@ -17,7 +19,7 @@ Documentação pessoal com dicas, lembretes e macetes sobre ferramentas voltadas
   * [SSH](linux/index.md#ssh)
   * [TAR](linux/index.md#tar)
 
-[HTML](html/index.md)
+[Nginx](nginx/index.md)
 
 [NodeJs](node/index.md)
 
