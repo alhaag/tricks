@@ -16,4 +16,4 @@ Procedimento para geração de senha:
 ```shell
 $ sudo htpasswd -c /etc/nginx/.htpasswd exampleuser
 ```
-Referencias https://www.digitalocean.com/community/tutorials/how-to-set-up-http-authentication-with-nginx-on-ubuntu-12-10
+Referencias [Tutorial Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-http-authentication-with-nginx-on-ubuntu-12-10)
