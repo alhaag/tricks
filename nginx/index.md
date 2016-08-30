@@ -1,5 +1,6 @@
 # Nginx
 
+### Autoindex
 Listagen de diretórios/arquivos com autenticação:
 ```
 location / {
