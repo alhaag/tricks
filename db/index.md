@@ -29,7 +29,10 @@ Verificar **estatísticas**, isto irá mostrar o nome do banco, número de recol
 	"ok" : 1
 }
 ```
-
+Acessar database ou criar caso não exista:
+```shell
+> use <db_name>
+```
 
 # Postgres
 
