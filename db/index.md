@@ -58,7 +58,7 @@ Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dad
 **Remover** base selecionada (caso nenhuma esteja selecionada a base teste será removida):
 ```
 > db.dropDatabase()
-Write
+{ "dropped" : "db_name", "ok" : 1 }
 ```
 
 # Postgres
