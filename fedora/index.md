@@ -1,6 +1,12 @@
 # Fedora
 Procedimentos particulares para instalação e configuração do ambiente de desenvolvimento no Fedora 24.
 
+## DNF
+Comandos uteis do gerenciador de pacotes DNF.
+
+Documentação completa em http://dnf.readthedocs.io/en/latest/command_ref.html
+
+
 ## MongoDB
 Instalação do MongoDB 3.2 desenvolvido pela comunidade.
 
