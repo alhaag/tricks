@@ -61,6 +61,8 @@ Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dad
 { "dropped" : "db_name", "ok" : 1 }
 ```
 
+db.COLLECTION_NAME.drop()
+
 **Criar collection**(equivalente a tabela dos SGDBs):
 ```
 >db.createCollection(<name>, options)
@@ -96,6 +98,12 @@ users
 >show collections
 users
 system.indexes
+```
+
+**Remover collection**:
+```
+>db.COLLECTION_NAME.drop()
+true
 ```
 
 # Postgres
