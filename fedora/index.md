@@ -14,6 +14,12 @@ Instalar pacote:
 $ sudo dnf install <package>
 ```
 
+Verificar atualizações:
+```shell
+$ sudo dnf clean all
+$ sudo dnf check-update
+```
+
 Atualizar pacotes instalados:
 ```shell
 $ sudo dnf update
