@@ -37,7 +37,7 @@ mongod:x:498:496:mongod:/var/lib/mongo:/bin/false
 Alterar as permissões do diretório para o usuário e grupo do mongo com os respectivos IDs:
 ```shell
 sudo chmod 0755 /data/db
-sudo chown -R 498:496 /data/db    # using the user-id , group-id
+sudo chown -R 498:496 /data/db    # usando o user-id e group-id
 ```
 
 
