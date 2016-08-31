@@ -9,12 +9,12 @@ Banco de alte desempenho orientado a documentos.
 
 Acesso ao **client**:
 ```shell
-$ mongo
+$mongo
 ```
 
 Verificar **estatísticas**, isto irá mostrar o nome do banco, número de recolha e documentos no banco de dados.
 ```shell
-> db.stats ()
+>db.stats ()
 {
 	"db" : "test",
 	"collections" : 0,
@@ -31,34 +31,51 @@ Verificar **estatísticas**, isto irá mostrar o nome do banco, número de recol
 ```
 Acessar base ou criar caso não exista:
 ```shell
-> use <db_name>
+>use <db_name>
 switched to db db_name
 ```
 
 Verificar base selecionada:
 ```shell
-> db
+>db
 db_name
 ```
 
 **Listar** todas as bases(apenas bases que possuem documentos serão listadas):
 ```shell
-> show dbs
+>show dbs
 local  0.000GB
 test   0.23012GB
 ```
 
 **Inserir** documento na base selecionada:
 ```
-> db.movie.insert({"name":"Teste de insert"})
+>db.movie.insert({"name":"Teste de insert"})
 WriteResult({ "nInserted" : 1 })
 ```
 Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dados, as coleções serão armazenados no banco de dados de teste.
 
 **Remover** base selecionada (caso nenhuma esteja selecionada a base teste será removida):
 ```
-> db.dropDatabase()
+>db.dropDatabase()
 { "dropped" : "db_name", "ok" : 1 }
+```
+
+**Criar collection**(equivalente a tabela dos SGDBs):
+```
+>db.createCollection(<name>, options)
+```
+Detalhamento de opções:
+| Opção | Tipo | Descrição |
+| capped | Boolean | (Opcional) Se verdadeiro, permite uma coleção tampado. Coleção tampado é uma coleção collecction tamanho fixo que substitui automaticamente suas entradas mais antigas quando atinge seu tamanho máximo. Se você especificar true, você precisa especificar parâmetro de tamanho também. |
+| autoIndexID | Boolean |  |
+| size | number |  |
+| max | number |  |
+
+Exemplo:
+```
+>db.createCollection("users", { capped : true, autoIndexID : true, size : 6142800, max : 10000 } )
+{ "ok" : 1 }
 ```
 
 # Postgres
