@@ -59,6 +59,7 @@ Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dad
 ```
 > db.dropDatabase()
 Write
+```
 
 # Postgres
 
