@@ -22,3 +22,23 @@ Instalar com o comando:
 ```shell
 $ sudo dnf install mongodb-org
 ```
+
+#### Resolução de problemas de inicialização
+Criar o diretório **/data/db** caso não exista:
+```shell
+$ sudo mkdir -p /data/db
+```
+
+Obter user-id e group-id do mongo:
+```shell
+$ grep mongo /etc/passwd
+mongod:x:498:496:mongod:/var/lib/mongo:/bin/false
+```
+Alterar as permissões do diretório para o usuário e grupo do mongo com os respectivos IDs:
+```shell
+sudo chmod 0755 /data/db
+sudo chown -R 498:496 /data/db    # using the user-id , group-id
+```
+
+
+
