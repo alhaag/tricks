@@ -53,6 +53,7 @@ Inserir documento na base selecionada:
 > db.movie.insert({"name":"Teste de insert"})
 WriteResult({ "nInserted" : 1 })
 ```
+Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dados, as coleções serão armazenados no banco de dados de teste.
 
 # Postgres
 
