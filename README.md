@@ -8,6 +8,8 @@ Documentação pessoal com dicas, lembretes e macetes sobre ferramentas voltadas
  
 [Docker](/docker/index.md)
 
+[Fedora](/fedora/index.md)
+
 [GIT](/git/index.md)
 
 [HTML](html/index.md)
