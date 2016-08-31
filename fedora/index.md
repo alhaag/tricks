@@ -4,6 +4,21 @@ Procedimentos particulares para instalação e configuração do ambiente de des
 ## DNF
 Comandos uteis do gerenciador de pacotes DNF.
 
+Pesquisar pacotes:
+```shell
+$ sudo dnf search <package>
+```
+
+Instalar pacote:
+```shell
+$ sudo dnf install <package>
+```
+
+Atualizar pacotes instalados:
+```shell
+$ sudo dnf update
+```
+
 Documentação completa em http://dnf.readthedocs.io/en/latest/command_ref.html
 
 
