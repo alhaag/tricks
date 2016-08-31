@@ -73,6 +73,12 @@ autoIndexID | Boolean | xxx
 size | number | xxx
 max | number | xxx
 
+| Opção        | Tipo           | Descrição  |
+| ------------- |:-------------:| :-----|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 Exemplo:
 ```
 >db.createCollection("users", { capped : true, autoIndexID : true, size : 6142800, max : 10000 } )
