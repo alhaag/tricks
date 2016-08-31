@@ -106,6 +106,37 @@ system.indexes
 true
 ```
 
+## Tipos de dados
+ * **String** : Tipo mais comum para armazenamento de dados. Strings em mongodb devem ser UTF-8 válidos.
+
+Integer : Este tipo é usado para armazenar um valor numérico. Integer pode ser de 32 bits ou 64 bits, dependendo do seu servidor.
+
+Boolean : Este tipo é usado para armazenar um valor booleano (true / false).
+
+Duplo : Este tipo é usado para armazenar valores de ponto flutuante.
+
+Min / Max chaves : Este tipo é usado para comparar um valor contra os elementos mínimos e máximos BSON.
+
+Arrays : Este tipo é usado para armazenar matrizes ou lista ou vários valores em uma chave.
+
+Timestamp : ctimestamp. Isto pode ser útil para a gravação quando um documento foi modificado ou adicionado.
+
+Objeto : Este tipo de dados é usado para documentos incorporados.
+
+Nulo : Este tipo é usado para armazenar um valor nulo.
+
+Símbolo : Este tipo de dados é utilizada de forma idêntica a uma corda no entanto, é geralmente reservado para as línguas que usam um tipo de símbolo específico.
+
+Data : Este tipo de dados é usado para armazenar a data ou a hora atual no formato de UNIX. Você pode especificar o seu próprio tempo de data através da criação de objeto de Data e passar o dia, mês, ano para ele.
+
+Object ID : Este tipo de dados é usado para armazenar o ID do documento.
+
+Os dados binários : Este tipo de dados é usado para armazenar dados binay.
+
+Código : Este tipo de dados é usado para armazenar o código javascript em documento.
+
+Expressão regular : Este tipo de dados é usado para armazenar expressão regular
+
 # Postgres
 
 # Redis
