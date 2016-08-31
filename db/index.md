@@ -7,12 +7,12 @@
 # MongoDB
 Banco de alte desempenho orientado a documentos.
 
-Acesso ao client:
+Acesso ao **client**:
 ```shell
 $ mongo
 ```
 
-Verificar estatísticas:
+Verificar **estatísticas**, isto irá mostrar o nome do banco, número de recolha e documentos no banco de dados.
 ```shell
 > db.stats ()
 {
