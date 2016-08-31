@@ -69,7 +69,7 @@ Detalhamento de opções:
 
 | Opção         | Tipo     | Descrição  |
 | ------------- |:--------:| :-----|
-| capped        | Boolean  | (Opcional) |
+| capped        | Boolean  | (Opcional) Se verdadeiro, permite uma coleção tampado. Coleção tampado é uma coleção collecction tamanho fixo que substitui automaticamente suas entradas mais antigas quando atinge seu tamanho máximo. Se você especificar true, você precisa especificar parâmetro de tamanho também. |
 | autoIndexID   | Boolean  |    |
 | size          | number   |     |
 | max           | number   |     |
