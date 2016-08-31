@@ -29,9 +29,29 @@ Verificar **estatísticas**, isto irá mostrar o nome do banco, número de recol
 	"ok" : 1
 }
 ```
-Acessar database ou criar caso não exista:
+Acessar base ou criar caso não exista:
 ```shell
 > use <db_name>
+switched to db db_name
+```
+
+Verificar base selecionada:
+```shell
+> db
+db_name
+```
+
+Listar todas as bases(apenas bases que possuem documentos serão listadas):
+```shell
+> show dbs
+local  0.000GB
+test   0.23012GB
+```
+
+Inserir documento na base selecionada:
+```
+> db.movie.insert({"name":"Teste de insert"})
+WriteResult({ "nInserted" : 1 })
 ```
 
 # Postgres
