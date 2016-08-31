@@ -66,12 +66,12 @@ Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dad
 >db.createCollection(<name>, options)
 ```
 Detalhamento de opções:
-Opção | Tipo | Descrição 
+Opção | Tipo | Descrição
 --- | --- | ---
-capped | Boolean | (Opcional) Se verdadeiro, permite uma coleção tampado. Coleção tampado é uma coleção collecction tamanho fixo que substitui automaticamente suas entradas mais antigas quando atinge seu tamanho máximo. Se você especificar true, você precisa especificar parâmetro de tamanho também. 
-autoIndexID | Boolean |  
-size | number |  
-max | number |  
+capped | Boolean | (Opcional).
+autoIndexID | Boolean | xxx
+size | number | xxx
+max | number | xxx
 
 Exemplo:
 ```
