@@ -70,9 +70,9 @@ Detalhamento de opções:
 | Opção         | Tipo     | Descrição  |
 | ------------- |:--------:| :-----|
 | capped        | Boolean  | (Opcional) Se verdadeiro, permite uma coleção tampado. Coleção tampado é uma coleção collecction tamanho fixo que substitui automaticamente suas entradas mais antigas quando atinge seu tamanho máximo. Se você especificar true, você precisa especificar parâmetro de tamanho também. |
-| autoIndexID   | Boolean  |    |
-| size          | number   |     |
-| max           | number   |     |
+| autoIndexID   | Boolean  | (Opcional) Se for verdade, criar automaticamente índice em _id field.s O valor padrão é falso. |
+| size          | number   | (Opcional) Especifica um tamanho máximo em bytes para uma coleção tampado. Se se tampado é verdade, então você precisa especificar neste campo também. |
+| max           | number   | (Opcional) Especifica o número máximo de documentos permitidos na coleção tampado. |
 
 Exemplo:
 ```
