@@ -1,7 +1,7 @@
 # Fedora
 Procedimentos particulares para instalação e configuração do ambiente de desenvolvimento no Fedora 24.
 
-### MongoDB
+## MongoDB
 Instalação do MongoDB 3.2 desenvolvido pela comunidade.
 
 Criar o arquivo para indicar ao dnf o repositório:
@@ -23,7 +23,7 @@ Instalar com o comando:
 $ sudo dnf install mongodb-org
 ```
 
-#### Resolução de problemas de inicialização
+### Resolução de problemas de inicialização
 Criar o diretório **/data/db** caso não exista:
 ```shell
 $ sudo mkdir -p /data/db
