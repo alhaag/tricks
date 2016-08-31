@@ -41,19 +41,24 @@ Verificar base selecionada:
 db_name
 ```
 
-Listar todas as bases(apenas bases que possuem documentos serão listadas):
+**Listar** todas as bases(apenas bases que possuem documentos serão listadas):
 ```shell
 > show dbs
 local  0.000GB
 test   0.23012GB
 ```
 
-Inserir documento na base selecionada:
+**Inserir** documento na base selecionada:
 ```
 > db.movie.insert({"name":"Teste de insert"})
 WriteResult({ "nInserted" : 1 })
 ```
 Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dados, as coleções serão armazenados no banco de dados de teste.
+
+**Remover** base selecionada (caso nenhuma esteja selecionada a base teste será removida):
+```
+> db.dropDatabase()
+Write
 
 # Postgres
 
