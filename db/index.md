@@ -65,6 +65,7 @@ Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dad
 ```
 >db.createCollection(<name>, options)
 ```
+
 Detalhamento de opções:
 
 | Opção         | Tipo     | Descrição  |
@@ -78,6 +79,23 @@ Exemplo:
 ```
 >db.createCollection("users", { capped : true, autoIndexID : true, size : 6142800, max : 10000 } )
 { "ok" : 1 }
+```
+
+Em mongodb você não precisa criar coleção. MongoDB cria coleção automaticamente, quando um documento é inserido. Ex:
+```
+>db.users.insert({"name" : "Nome do usuario"})
+>show collections
+mycol
+mycollection
+system.indexes
+users
+```
+
+**Listar colecttions**(equivalente a tabelas dos SGDBs):
+```
+>show collections
+users
+system.indexes
 ```
 
 # Postgres
