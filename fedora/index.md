@@ -14,6 +14,11 @@ Instalar pacote:
 $ sudo dnf install <package>
 ```
 
+Remover pacote:
+```shell
+$ sudo dnf remove <package>
+```
+
 Verificar atualizações:
 ```shell
 $ sudo dnf clean all
