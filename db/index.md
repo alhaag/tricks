@@ -66,18 +66,13 @@ Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dad
 >db.createCollection(<name>, options)
 ```
 Detalhamento de opções:
-Opção | Tipo | Descrição
---- | --- | ---
-capped | Boolean | (Opcional).
-autoIndexID | Boolean | xxx
-size | number | xxx
-max | number | xxx
 
-| Opção        | Tipo           | Descrição  |
-| ------------- |:-------------:| :-----|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Opção         | Tipo     | Descrição  |
+| ------------- |:--------:| :-----|
+| capped        | Boolean  | (Opcional) |
+| autoIndexID   | Boolean  |    |
+| size          | number   |     |
+| max           | number   |     |
 
 Exemplo:
 ```
