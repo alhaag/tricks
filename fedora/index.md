@@ -34,7 +34,9 @@ Documentação completa em http://dnf.readthedocs.io/en/latest/command_ref.html
 
 
 ## MongoDB
-Instalação do MongoDB 3.2 desenvolvido pela comunidade.
+Instalação do MongoDB 3.2 desenvolvido pela comunidade, resolução de problemas e funcionalidades básicas.
+
+### Instalação
 
 Criar o arquivo para indicar ao dnf o repositório:
 ```shell
