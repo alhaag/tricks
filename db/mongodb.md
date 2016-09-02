@@ -172,6 +172,11 @@ No MongoBD existe uyma equivalência ao **WHERE** dos RDMBS, onde as seguintes c
 | Maior ou igual | {key:{$gte:value}}   | find({"likes":{$gte:50}})      | where likes >= 50            |
 | Diferente de   | {key:{$ne:value}}    | find({"likes":{$ne:50}})       | where likes != 50            |
 
+No método find() é possível passar várias chaves separadas  por ',', assim o MongoDB trata como uma condição **AND**. Sintaxe básica é mostrada no exemplo a seguir:
+```
+> db.users.find({key1:value1, key2:value2})
+```
+
 
 ## Tipos de dados
  * **String**: Tipo mais comum para armazenamento de dados. Strings em mongodb devem ser UTF-8 válidos.
