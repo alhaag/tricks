@@ -1,9 +1,7 @@
 # MongoDB
 Banco de alte desempenho orientado a documentos.
 
-Alguns conceitos são diferentes quando comparados a bancos de dados relacionais.
-
-Segem alguns exemplos comparativos:
+Alguns conceitos são diferentes quando comparados aos tradicionais bancos de dados relacionais. Segue tabela comparativa:
 
 | BD Relacional      | MongoDB       |
 | :----------------- |:--------------|
