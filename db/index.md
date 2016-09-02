@@ -90,7 +90,7 @@ system.indexes
 ## Drop collection
 A remoção de uma collection específica é realizada com o comando **db.<colection_name>.drop()**. Ex:
 ```
->db.users.drop()
+> db.users.drop()
 { "dropped" : "db_name", "ok" : 1 }
 ```
 
@@ -101,6 +101,37 @@ A inserção de um novo documento na base selecionada é realizada por meio do c
 WriteResult({ "nInserted" : 1 })
 ```
 Obs: em mongodb banco de dados padrão é o teste. Se não for criado um banco de dados, as coleções serão armazenados no banco de dados de teste.
+
+Exemplo de inserção de coleção de documentos:
+```
+>db.post.insert([
+   {
+      title: 'MongoDB Overview', 
+      description: 'MongoDB is no sql database',
+      by: 'tutorials point',
+      url: 'http://www.tutorialspoint.com',
+      tags: ['mongodb', 'database', 'NoSQL'],
+      likes: 100
+   },
+
+   {
+      title: 'NoSQL Database', 
+      description: "NoSQL database doesn't have tables",
+      by: 'tutorials point',
+      url: 'http://www.tutorialspoint.com',
+      tags: ['mongodb', 'database', 'NoSQL'],
+      likes: 20, 
+      comments: [ 
+         {
+            user:'user1',
+            message: 'My first comment',
+            dateCreated: new Date(2013,11,10,2,35),
+            like: 0 
+         }
+      ]
+   }
+])
+```
 
 
 ## Select (find)
