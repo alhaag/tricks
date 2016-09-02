@@ -6,7 +6,7 @@ Alguns conceitos são diferentes quando comparados a bancos de dados relacionais
 Segem alguns exemplos comparativos:
 
 | BD Relacional      | MongoDB       |
-| ------------------ |:-------------:|
+| :----------------- |:--------------|
 | Tabela             | Collection    |
 | Registro da tabela | Documento     |
 | Armazenamento em tabelas relacionadas | Dados relacionados em um único documento(JSON)  |
