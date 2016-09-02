@@ -163,14 +163,14 @@ A consulta de um único documento é realizada por meio da função **findOne()*
 ```
 No MongoBD existe uyma equivalência ao **WHERE** dos RDMBS, onde as seguintes condições podem ser utilizadas em uma busca passando-se por parâmetro no método **find()** ou **findOne()**:
 
-| Operação     | Sintaxe do parâmetro   | Exemplo                 | Equivalente em RDBMS                |
-| :------------|:-----------------------|:------------------------|:------------------------------------|
-| Igualdade    | {<key>:<value>}        | find({"by":"tutorials point"}) | where by = 'tutorials point' |
-| Igualdade    | {<key>:{$lt:<value>}}  | find({"likes":{$lt:50}})  | where likes < 50                  |
-| Igualdade    | {<key>:{$lte:<value>}} | find({"likes":{$lte:50}}) | where likes <= 50                 |
-| Igualdade    | {<key>:{$gt:<value>}}  | find({"likes":{$gt:50}})  | where likes > 50                  |
-| Igualdade    | {<key>:{$gte:<value>}} | find({"likes":{$gte:50}}) | where likes >= 50                 |
-| Igualdade    | {<key>:{$ne:<value>}}  | find({"likes":{$ne:50}})  | where likes != 50                 |
+| Operação       | Sintaxe do parâmetro | Exemplo                        | Equivalente em RDBMS         |
+| :--------------|:--------------  -----|:-------------------------------|:-----------------------------|
+| Igualdade      | {key:value}          | find({"by":"tutorials point"}) | where by = 'tutorials point' |
+| Menor que      | {key:{$lt:value}}    | find({"likes":{$lt:50}})       | where likes < 50             |
+| Menor ou igual | {key:{$lte:value}}   | find({"likes":{$lte:50}})      | where likes <= 50            |
+| Maior que      | {key:{$gt:value}}    | find({"likes":{$gt:50}})       | where likes > 50             |
+| Maior ou igual | {key:{$gte:value}}   | find({"likes":{$gte:50}})      | where likes >= 50            |
+| Diferente de   | {key:{$ne:value}}    | find({"likes":{$ne:50}})       | where likes != 50            |
 
 
 ## Tipos de dados
