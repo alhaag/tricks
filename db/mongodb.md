@@ -147,6 +147,16 @@ Listar todos os documentos de uma collection:
 { "_id" : ObjectId("57c8c721d7a9bc9e973b2c15"), "name" : "Teste de insert 3" }
 ```
 
+A adição da função **pretty()** faz com que a lista seja apresentada com indentamento. Ex:
+```shell
+> db.users.find().pretty()
+{ 
+    "_id" : ObjectId("57c8c570d7a9bc9e973b2c13"),  
+    "name" : "Teste de insert" 
+}
+...
+```
+
 ## Tipos de dados
  * **String**: Tipo mais comum para armazenamento de dados. Strings em mongodb devem ser UTF-8 válidos.
  * **Integer**: Este tipo é usado para armazenar um valor numérico. Integer pode ser de 32 bits ou 64 bits, dependendo do servidor.
