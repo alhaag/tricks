@@ -138,6 +138,7 @@ Para inserir o documento que você pode usar **db.COLLECTION.save(DOCUMENT)**. S
 ```
 > db.COLLECTION.save({_id:ObjectId(),NEW_DATA})
 ```
+Obs: o save substitui todos os dados do documento.
 
 Para atualização de multiplos documentos por um criterio de busca é necessário utilizar o método **update()**, onde a sintaxe básica é:
 ```
@@ -147,6 +148,24 @@ Por padrão o MongoDB irá atualizar apenas um único documento, para atualizar 
 ```
 > db.mycol.update({'title':'MongoDB Overview'},
    {$set:{'title':'New MongoDB Tutorial'}},{multi:true})
+```
+
+Detalhes sobre os criterios de busca serão apresentados na seção select.
+
+## Delete
+A remoção de um ou mais documentos é realizada pelo método **remove()**. Ex:
+```
+> db.COLLECTION.remove(DELLETION_CRITTERIA)
+```
+
+Se o objetivo é remover penas um documento, deve ser definido o parâmetro **justone**. Ex:
+```
+> db.COLLECTION.remove(DELETION_CRITERIA, 1)
+```
+
+Se enhum critério de busca for especificado, todos os documentos  da collection serão removidos. Ex:
+```
+db.COLLECTION.remove()
 ```
 
 Detalhes sobre os criterios de busca serão apresentados na seção select.
