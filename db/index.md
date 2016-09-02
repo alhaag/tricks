@@ -7,17 +7,18 @@ Alguns conceitos são diferentes quando comparados aos tradicionais bancos de da
 | :----------------- |:--------------|
 | Tabela             | Collection    |
 | Registro da tabela | Documento     |
-| Armazenamento em tabelas relacionadas | Dados relacionados em um único documento(JSON)  |
+| Utiliza linguagem SQL | Não utiliza SQL |
+| Armazenamento em tabelas relacionadas | Dados relacionados em um único documento(JSON) |
 
-
-Acesso ao **client**:
+## Console
+Acesso ao console client:
 ```shell
 $mongo
 ```
-
-Verificar **estatísticas**, isto irá mostrar o nome do banco, número de recolha e documentos no banco de dados.
+## Informações
+Algumas **estatísticas** como o nome do banco, número de recolha e documentos no banco de dados podem ser obtidos por meio da função **stats**. Ex:
 ```shell
->db.stats ()
+> db.stats ()
 {
 	"db" : "test",
 	"collections" : 0,
@@ -32,32 +33,37 @@ Verificar **estatísticas**, isto irá mostrar o nome do banco, número de recol
 	"ok" : 1
 }
 ```
-Acessar base ou criar caso não exista:
+
+## Criar/acessar base
+Para acessar uma base deve ser utilizado o comando **use <db_name>**, caso a base n]ao exista o Mongo irá criar automaticamente uma nova. Ex:
 ```shell
->use <db_name>
-switched to db db_name
+> use base_teste
+switched to db base_teste
 ```
 
 Verificar base selecionada:
 ```shell
->db
-db_name
+> db
+base_teste
 ```
 
-**Listar** todas as bases(apenas bases que possuem documentos serão listadas):
+Para **Listar** todas as bases, utilizaa-se o comando **show dbs**. Ex:
 ```shell
 >show dbs
 local  0.000GB
 test   0.23012GB
 ```
+Obs: apenas bases que possuem documentos serão listadas.
 
-**Inserir** documento na base selecionada:
+## Insert
+A inserção de um novo documento na base selecionada é realizada com o comando **insert**. Ex:
 ```
->db.movie.insert({"name":"Teste de insert"})
+>db.users.insert({"name":"Teste de insert"})
 WriteResult({ "nInserted" : 1 })
 ```
-Em mongodb banco de dados padrão é o teste. Se não for criado um banco de dados, as coleções serão armazenados no banco de dados de teste.
+Obs: em mongodb banco de dados padrão é o teste. Se não for criado um banco de dados, as coleções serão armazenados no banco de dados de teste.
 
+## Delete
 **Remover** base selecionada (caso nenhuma esteja selecionada a base teste será removida):
 ```
 >db.dropDatabase()
