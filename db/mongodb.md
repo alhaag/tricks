@@ -134,13 +134,22 @@ Exemplo de inserção de coleção de documentos:
 ```
 
 ## Update
-Para inserir o documento que você pode usar **db.COLLECTION.save(DOCUMENT)**. Se você não especificar _id no documento, o **save** irá funcionar como o **insert**. Porém o **_id** for especificado, ele irá substituir os dados do documento que contém _id informado.
+Para inserir o documento que você pode usar **db.COLLECTION.save(DOCUMENT)**. Se você não especificar _id no documento, o **save** irá funcionar como o **insert**. Porém o **_id** for especificado, ele irá substituir os dados do documento que contém _id informado. Ex:
+```
+> db.COLLECTION.save({_id:ObjectId(),NEW_DATA})
+```
 
 Para atualização de multiplos documentos por um criterio de busca é necessário utilizar o método **update()**, onde a sintaxe básica é:
 ```
->db.COLLECTION.update(SELECTIOIN_CRITERIA, UPDATED_DATA)
+> db.COLLECTION.update(SELECTIOIN_CRITERIA, UPDATED_DATA)
 ```
-Mais detalhes sobre os criterios de busca na seção find.
+Por padrão o MongoDB irá atualizar apenas um único documento, para atualizar múltiplos, é necessário definir um parâmetro, "multi" para true. Ex:
+```
+> db.mycol.update({'title':'MongoDB Overview'},
+   {$set:{'title':'New MongoDB Tutorial'}},{multi:true})
+```
+
+Detalhes sobre os criterios de busca serão apresentados na seção select.
 
 ## Select (find)
 As buscas e listagens são realizadas com a função **db.COLLECTION.find()**.
