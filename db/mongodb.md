@@ -161,11 +161,16 @@ A consulta de um único documento é realizada por meio da função **findOne()*
 > db.users.findOne()
 { "_id" : ObjectId("57c8c570d7a9bc9e973b2c13"), "name" : "Teste de insert" }
 ```
-No MongoBD existe uyma equivalência ao **WHERE** dos RDMBS, onde as seguintes condições podem ser utilizadas em uma busca passando-se por parâmetro no método **find()**:
+No MongoBD existe uyma equivalência ao **WHERE** dos RDMBS, onde as seguintes condições podem ser utilizadas em uma busca passando-se por parâmetro no método **find()** ou **findOne()**:
 
-| Operação     | Sintaxe       | Exemplo               | RDBMS Equivalent |
-| :------------|:--------------|:----------------------|:-----------------|
-| Igualdade    | Collection    |                       |                  |
+| Operação     | Sintaxe do parâmetro   | Exemplo                 | Equivalente em RDBMS                |
+| :------------|:-----------------------|:------------------------|:------------------------------------|
+| Igualdade    | {<key>:<value>}        | find({"by":"tutorials point"}) | where by = 'tutorials point' |
+| Igualdade    | {<key>:{$lt:<value>}}  | find({"likes":{$lt:50}})  | where likes < 50                  |
+| Igualdade    | {<key>:{$lte:<value>}} | find({"likes":{$lte:50}}) | where likes <= 50                 |
+| Igualdade    | {<key>:{$gt:<value>}}  | find({"likes":{$gt:50}})  | where likes > 50                  |
+| Igualdade    | {<key>:{$gte:<value>}} | find({"likes":{$gte:50}}) | where likes >= 50                 |
+| Igualdade    | {<key>:{$ne:<value>}}  | find({"likes":{$ne:50}})  | where likes != 50                 |
 
 
 ## Tipos de dados
