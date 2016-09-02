@@ -176,7 +176,24 @@ No método find() é possível passar várias chaves separadas  por ',', assim o
 ```
 > db.users.find({key1:value1, key2:value2})
 ```
+A equivalência da clausula **OR** é obtida com a palavra chave **$or**. Ex:
+```
+> db.users.find({$or: [{key1: value1}, {key2:value2}]})
+```
 
+Exemplo de utilização de **AND** e **OR** em uma mesma busca:
+```
+>db.mycol.find({"likes": {$gt:10}, $or: [{"by": "tutorials point"}, {"title": "MongoDB Overview"}]}).pretty()
+{
+   "_id": ObjectId(7df78ad8902c),
+   "title": "MongoDB Overview", 
+   "description": "MongoDB is no sql database",
+   "by": "tutorials point",
+   "url": "http://www.tutorialspoint.com",
+   "tags": ["mongodb", "database", "NoSQL"],
+   "likes": "100"
+}
+```
 
 ## Tipos de dados
  * **String**: Tipo mais comum para armazenamento de dados. Strings em mongodb devem ser UTF-8 válidos.
