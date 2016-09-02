@@ -132,7 +132,9 @@ Exemplo de inserção de coleção de documentos:
    }
 ])
 ```
-Para inserir o documento que você pode usar db.<collection_name>.save(<document>). Se você não especificar _id no documento, o **save** irá funcionar como o **insert**. Se você especificar _id, então ele irá substituir os dados do documento que contém _id como especificado no método save.
+
+## Update
+Para inserir o documento que você pode usar **db.<collection_name>.save(<document>)**. Se você não especificar _id no documento, o **save** irá funcionar como o **insert**. Porém o **_id** for especificado, ele irá substituir os dados do documento que contém _id informado.
 
 ## Select (find)
 As buscas e listagens são realizadas com a função **db.<collection_name>.find()**.
