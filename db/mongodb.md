@@ -35,7 +35,7 @@ Algumas **estatísticas** como o nome do banco, número de recolha e documentos 
 ```
 
 ## Criar/acessar base
-Para acessar uma base deve ser utilizado o comando **use <db_name>**, caso a base n]ao exista o Mongo irá criar automaticamente uma nova. Ex:
+Para acessar uma base deve ser utilizado o comando **use DB_NAME**, caso a base n]ao exista o Mongo irá criar automaticamente uma nova. Ex:
 ```shell
 > use base_teste
 switched to db base_teste
@@ -64,7 +64,7 @@ A remoção da base selecionada é realizada por meio do comando **db.dropDataba
 Obs: caso nenhuma base esteja selecionada, a base teste será removida;
 
 ## Criar collection
-A criação de uma nova collection é realizada por meio do comando **db.createCollection(<name>, options)**. Ex:
+A criação de uma nova collection é realizada por meio do comando **db.createCollection(NAME, options)**. Ex:
 ```
 > db.createCollection("users", {capped : true, autoIndexID : true, size : 6142800, max : 10000})
 ```
@@ -88,14 +88,14 @@ system.indexes
 ```
 
 ## Drop collection
-A remoção de uma collection específica é realizada com o comando **db.<colection_name>.drop()**. Ex:
+A remoção de uma collection específica é realizada com o comando **db.COLLECTION.drop()**. Ex:
 ```
 > db.users.drop()
 { "dropped" : "db_name", "ok" : 1 }
 ```
 
 ## Insert
-A inserção de um novo documento na base selecionada é realizada por meio do comando **db.<collection>.insert(<json_data>)**. Ex:
+A inserção de um novo documento na base selecionada é realizada por meio do comando **db.COLLECTION.insert(DOCUMENT)**. Ex:
 ```
 > db.users.insert({"name":"Teste de insert"})
 WriteResult({ "nInserted" : 1 })
@@ -134,10 +134,10 @@ Exemplo de inserção de coleção de documentos:
 ```
 
 ## Update
-Para inserir o documento que você pode usar **db.<collection_name>.save(<document>)**. Se você não especificar _id no documento, o **save** irá funcionar como o **insert**. Porém o **_id** for especificado, ele irá substituir os dados do documento que contém _id informado.
+Para inserir o documento que você pode usar **db.COLLECTION.save(DOCUMENT)**. Se você não especificar _id no documento, o **save** irá funcionar como o **insert**. Porém o **_id** for especificado, ele irá substituir os dados do documento que contém _id informado.
 
 ## Select (find)
-As buscas e listagens são realizadas com a função **db.<collection_name>.find()**.
+As buscas e listagens são realizadas com a função **db.COLLECTION.find()**.
 
 Listar todos os documentos de uma collection:
 ```shell
