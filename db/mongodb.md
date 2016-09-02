@@ -156,6 +156,12 @@ A adição da função **pretty()** faz com que a lista seja apresentada com ind
 }
 ...
 ```
+A consulta de um único documento é realizada por meio da função **findOne()**. Ex:
+```shell
+> db.users.findOne()
+{ "_id" : ObjectId("57c8c570d7a9bc9e973b2c13"), "name" : "Teste de insert" }
+```
+
 
 ## Tipos de dados
  * **String**: Tipo mais comum para armazenamento de dados. Strings em mongodb devem ser UTF-8 válidos.
