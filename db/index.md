@@ -1,11 +1,16 @@
-# Casandra
-
-# DB2
-
-# MySQL
-
 # MongoDB
 Banco de alte desempenho orientado a documentos.
+
+Alguns conceitos são diferentes quando comparados a bancos de dados relacionais.
+
+Segem alguns exemplos comparativos:
+
+| BD Relacional      | MongoDB       |
+| ------------------ |:-------------:|
+| Tabela             | Collection    |
+| Registro da tabela | Documento     |
+| Armazenamento em tabelas relacionadas | Dados relacionados em um único documento(JSON)  |
+
 
 Acesso ao **client**:
 ```shell
@@ -92,18 +97,29 @@ mycollection
 system.indexes
 users
 ```
-
+## Show collections
 **Listar colecttions**(equivalente a tabelas dos SGDBs):
 ```
->show collections
+> show collections
 users
 system.indexes
 ```
-
-**Remover collection**:
-```
->db.COLLECTION_NAME.drop()
+## Drop collection
+A remoção de uma collection é realizada com a função drop, **db.<COLLECTION_NAME>.drop()**. Ex:
+```shell
+> db.users.drop()
 true
+```
+
+**Listar/buscar**
+As buscas e listagens são realizadas com a função **db.<COLLECTION_NAME>.find()**.
+
+Exemplo para listar todos os documentos de uma collection:
+```shell
+> db.movie.find()
+{ "_id" : ObjectId("57c8c570d7a9bc9e973b2c13"), "name" : "Teste de insert" }
+{ "_id" : ObjectId("57c8c71ed7a9bc9e973b2c14"), "name" : "Teste de insert 2" }
+{ "_id" : ObjectId("57c8c721d7a9bc9e973b2c15"), "name" : "Teste de insert 3" }
 ```
 
 ## Tipos de dados
@@ -123,6 +139,3 @@ true
  * **Code**: Este tipo de dados é usado para armazenar o código javascript em documento.
  * **Regular expression**: Este tipo de dados é usado para armazenar expressão regular.
 
-# Postgres
-
-# Redis
