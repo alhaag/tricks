@@ -136,6 +136,12 @@ Exemplo de inserção de coleção de documentos:
 ## Update
 Para inserir o documento que você pode usar **db.COLLECTION.save(DOCUMENT)**. Se você não especificar _id no documento, o **save** irá funcionar como o **insert**. Porém o **_id** for especificado, ele irá substituir os dados do documento que contém _id informado.
 
+Para atualização de multiplos documentos por um criterio de busca é necessário utilizar o método **update()**, onde a sintaxe básica é:
+```
+>db.COLLECTION.update(SELECTIOIN_CRITERIA, UPDATED_DATA)
+```
+Mais detalhes sobre os criterios de busca na seção find.
+
 ## Select (find)
 As buscas e listagens são realizadas com a função **db.COLLECTION.find()**.
 
