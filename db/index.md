@@ -46,8 +46,8 @@ Verificar base selecionada:
 > db
 base_teste
 ```
-
-Para **Listar** todas as bases, utilizaa-se o comando **show dbs**. Ex:
+## Listar bases
+A listagem de todas as bases pode ser obtida por meio do comando **show dbs**. Ex:
 ```shell
 >show dbs
 local  0.000GB
@@ -55,29 +55,20 @@ test   0.23012GB
 ```
 Obs: apenas bases que possuem documentos serão listadas.
 
-## Insert
-A inserção de um novo documento na base selecionada é realizada com o comando **insert**. Ex:
-```
->db.users.insert({"name":"Teste de insert"})
-WriteResult({ "nInserted" : 1 })
-```
-Obs: em mongodb banco de dados padrão é o teste. Se não for criado um banco de dados, as coleções serão armazenados no banco de dados de teste.
-
-## Delete
-**Remover** base selecionada (caso nenhuma esteja selecionada a base teste será removida):
+## Drop database
+A remoção da base selecionada é realizada por meio do comando **db.dropDatabase()**. Ex:
 ```
 >db.dropDatabase()
 { "dropped" : "db_name", "ok" : 1 }
 ```
+Obs: caso nenhuma base esteja selecionada, a base teste será removida;
 
-db.COLLECTION_NAME.drop()
-
-**Criar collection**(equivalente a tabela dos SGDBs):
+## Criar collection
+A criação de uma nova collection é realizada por meio do comando **db.createCollection(<name>, options)**. Ex:
 ```
->db.createCollection(<name>, options)
+> db.createCollection("users", {capped : true, autoIndexID : true, size : 6142800, max : 10000})
 ```
-
-Detalhamento de opções:
+Opções disponíveis:
 
 | Opção         | Tipo     | Descrição  |
 | ------------- |:--------:| :-----|
@@ -86,36 +77,33 @@ Detalhamento de opções:
 | size          | number   | (Opcional) Especifica um tamanho máximo em bytes para uma coleção tampado. Se se tampado é verdade, então você precisa especificar neste campo também. |
 | max           | number   | (Opcional) Especifica o número máximo de documentos permitidos na coleção tampado. |
 
-Exemplo:
-```
->db.createCollection("users", { capped : true, autoIndexID : true, size : 6142800, max : 10000 } )
-{ "ok" : 1 }
-```
+Obs: em mongodb você não precisa criar coleção. MongoDB cria coleção automaticamente, quando um documento é inserido.
 
-Em mongodb você não precisa criar coleção. MongoDB cria coleção automaticamente, quando um documento é inserido. Ex:
-```
->db.users.insert({"name" : "Nome do usuario"})
->show collections
-mycol
-mycollection
-system.indexes
-users
-```
 ## Show collections
-**Listar colecttions**(equivalente a tabelas dos SGDBs):
+A listagem colecttions de uma base selecionada é realizada por meio do comando **show collections**. Ex:
 ```
 > show collections
 users
 system.indexes
 ```
+
 ## Drop collection
-A remoção de uma collection é realizada com a função drop, **db.<COLLECTION_NAME>.drop()**. Ex:
-```shell
-> db.users.drop()
-true
+A remoção de uma collection específica é realizada com o comando **db.<colection_name>.drop()**. Ex:
+```
+>db.users.drop()
+{ "dropped" : "db_name", "ok" : 1 }
 ```
 
-**Listar/buscar**
+## Insert
+A inserção de um novo documento na base selecionada é realizada por meio do comando **db.<collection>.insert(<json_data>)**. Ex:
+```
+> db.users.insert({"name":"Teste de insert"})
+WriteResult({ "nInserted" : 1 })
+```
+Obs: em mongodb banco de dados padrão é o teste. Se não for criado um banco de dados, as coleções serão armazenados no banco de dados de teste.
+
+
+**Select/find**
 As buscas e listagens são realizadas com a função **db.<COLLECTION_NAME>.find()**.
 
 Exemplo para listar todos os documentos de uma collection:
