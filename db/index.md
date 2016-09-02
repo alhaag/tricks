@@ -103,12 +103,12 @@ WriteResult({ "nInserted" : 1 })
 Obs: em mongodb banco de dados padrão é o teste. Se não for criado um banco de dados, as coleções serão armazenados no banco de dados de teste.
 
 
-**Select/find**
-As buscas e listagens são realizadas com a função **db.<COLLECTION_NAME>.find()**.
+## Select (find)
+As buscas e listagens são realizadas com a função **db.<collection_name>.find()**.
 
-Exemplo para listar todos os documentos de uma collection:
+Listar todos os documentos de uma collection:
 ```shell
-> db.movie.find()
+> db.users.find()
 { "_id" : ObjectId("57c8c570d7a9bc9e973b2c13"), "name" : "Teste de insert" }
 { "_id" : ObjectId("57c8c71ed7a9bc9e973b2c14"), "name" : "Teste de insert 2" }
 { "_id" : ObjectId("57c8c721d7a9bc9e973b2c15"), "name" : "Teste de insert 3" }
