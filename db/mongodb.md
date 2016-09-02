@@ -161,6 +161,10 @@ A consulta de um único documento é realizada por meio da função **findOne()*
 > db.users.findOne()
 { "_id" : ObjectId("57c8c570d7a9bc9e973b2c13"), "name" : "Teste de insert" }
 ```
+No MongoBD existe uyma equivalência ao **WHERE** dos RDMBS, onde as seguintes condições podem ser utilizadas em uma busca passando-se por parâmetro no método **find()**:
+| Operação     | Sintaxe       | Exemplo               | RDBMS Equivalent |
+| :------------|:--------------|:----------------------|:-----------------|
+| Igualdade    | Collection    |                       |                  |
 
 
 ## Tipos de dados
