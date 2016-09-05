@@ -275,4 +275,5 @@ A ordenação por um determinado campo é realizada por meio do método **sort(D
  * **Regular expression**: Este tipo de dados é usado para armazenar expressão regular.
 
 ### Referências
-[Tutorials Point](http://www.tutorialspoint.com/mongodb/mongodb_aggregation.htm)
+[Tutorials Point / MongoDB](http://www.tutorialspoint.com/mongodb)
+[Documentção oficial](https://docs.mongodb.com/)
