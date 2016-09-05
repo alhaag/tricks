@@ -1,7 +1,7 @@
 # MongoDB
-Banco de alte desempenho orientado a documentos.
+Banco de dados de alto desempenho orientado a documentos JSON.
 
-Alguns conceitos são diferentes quando comparados aos tradicionais bancos de dados relacionais. Segue tabela comparativa:
+Alguns conceitos são diferentes quando comparados aos tradicionais bancos de dados relacionais. Segue tabela comparativa que faz uma breve analogia ao BD relacional:
 
 | BD Relacional      | MongoDB       |
 | :----------------- |:--------------|
