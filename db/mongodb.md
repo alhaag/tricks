@@ -274,3 +274,5 @@ A ordenação por um determinado campo é realizada por meio do método **sort(D
  * **Code**: Este tipo de dados é usado para armazenar o código javascript em documento.
  * **Regular expression**: Este tipo de dados é usado para armazenar expressão regular.
 
+### Referências
+[Tutorials Point](http://www.tutorialspoint.com/mongodb/mongodb_aggregation.htm)
