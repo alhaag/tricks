@@ -1,11 +1,13 @@
 # Tricks
 Documentação pessoal com dicas, lembretes e macetes sobre ferramentas voltadas para o desenvolvimento de software e linguagens de programação.
 
-[Data bases](/db/index.md)
-  * [DB2](db/index.md#db2)
-  * [MySQL](db/index.md#mysql)
-  * [MongoDB](db/index.md#mongodb)
-  * [Postgres](db/index.md#postgres)
+Data bases
+  * [Casandra](db/casandra.md)
+  * [DB2](db/index.md)
+  * [MySQL](db/mysql.md)
+  * [MongoDB](db/mongodb.md)
+  * [Postgres](db/postgres.md)
+  * [SQLite](db/sqlite.md)
  
 [Docker](/docker/index.md)
 
