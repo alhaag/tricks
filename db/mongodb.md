@@ -249,7 +249,7 @@ A **limitação de quantidade** de documentos retornados é realizada por meio d
 {"title":"NoSQL Overview"}
 ```
 ## OrderBy
-A ordenação por um determinado campo é realizada por meio do método **sort(DIRECTION)**, onde o parametro indica a direção, **1** para crescente e **-1** para decrescente Ex:
+A ordenação por um determinado campo é realizada por meio do método **sort(DIRECTION)**, onde o parametro indica a direção, **1** para crescente e **-1** para decrescente. Ex:
 ```
 >db.mycol.find({},{"title":1,_id:0}).sort({"title":-1})
 {"title":"Tutorials Point Overview"}
