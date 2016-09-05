@@ -19,7 +19,7 @@ $ sudo htpasswd -c /etc/nginx/.htpasswd exampleuser
 ```
 Referencias [Tutorial Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-http-authentication-with-nginx-on-ubuntu-12-10)
 
-# Hack para multiplas condições
+## Hack para multiplas condições
 ```
     if ($request_uri = /) { 
       set $test  A; 
