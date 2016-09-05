@@ -228,6 +228,13 @@ Exemplo de utilização de **AND** e **OR** em uma mesma busca:
    "likes": "100"
 }
 ```
+É possível **especificar campos** do(s) documento(s) que devem ser retornados utilizando o segundo parâmetro do método **db.COLLECTION_NAME.find({},{OBJECT_KEYS})**, onde o valor **1** indica que o campo deve ser retornado e **0** que deve ser omitido. Ex:
+```
+> db.mycol.find({},{"title":1,_id:0})
+{"title":"MongoDB Overview"}
+{"title":"NoSQL Overview"}
+{"title":"Tutorials Point Overview"}
+```
 
 ## Tipos de dados
  * **String**: Tipo mais comum para armazenamento de dados. Strings em mongodb devem ser UTF-8 válidos.
