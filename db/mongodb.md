@@ -236,6 +236,27 @@ Exemplo de utilização de **AND** e **OR** em uma mesma busca:
 {"title":"Tutorials Point Overview"}
 ```
 
+A **limitação de quantidade** de documentos retornados é realizada por meio do método **limit(NUMBER)**. Ex:
+```
+> db.mycol.find({},{"title":1,_id:0}).limit(2)
+{"title":"MongoDB Overview"}
+{"title":"NoSQL Overview"}
+```
+
+É possível também pular uma determinada quantidade de documentos com o método **skip(NUMBER)**, isso pode ser útil para fins de páginação. Ex:
+```
+> db.mycol.find({},{"title":1,_id:0}).limit(1).skip(1)
+{"title":"NoSQL Overview"}
+```
+## OrderBy
+A ordenação por um determinado campo é realizada por meio do método **sort(DIRECTION)**, onde o parametro indica a direção, **1** ou **-1** Ex:
+```
+>db.mycol.find({},{"title":1,_id:0}).sort({"title":-1})
+{"title":"Tutorials Point Overview"}
+{"title":"NoSQL Overview"}
+{"title":"MongoDB Overview"}
+```
+
 ## Tipos de dados
  * **String**: Tipo mais comum para armazenamento de dados. Strings em mongodb devem ser UTF-8 válidos.
  * **Integer**: Este tipo é usado para armazenar um valor numérico. Integer pode ser de 32 bits ou 64 bits, dependendo do servidor.
