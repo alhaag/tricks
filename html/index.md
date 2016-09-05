@@ -14,9 +14,9 @@
 
 |Número|Descrição|Decimal|Hexa|Nome|Caracter|
 |--- |--- |--- |--- |--- |--- |
-|32|Espaço em branco|&#32;|&#x20;||
-|33|Ponto de exclamação|&#33;|&#x21;||!|
-|34|Aspas duplas|&#34;|&#x22;|&quot;|“|
+|32|Espaço em branco|``&#32;``|``&#x20;``||
+|33|Ponto de exclamação|``&#33;``|``&#x21;``||!|
+|34|Aspas duplas|``&#34;``|``&#x22;``|``&quot;``|“|
 |35|Símbolo de cardinal, sustenido|&#35;|&#x23;||#|
 |36|Cifrão|&#36;|&#x24;||$|
 |37|Sinal de porcentagem|&#37;|&#x25;||%|
