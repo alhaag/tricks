@@ -1,6 +1,6 @@
 # Nginx
 
-### Autoindex
+## Autoindex
 Listagen de diretórios/arquivos com autenticação:
 ```
 location / {
@@ -18,3 +18,23 @@ Procedimento para geração de senha:
 $ sudo htpasswd -c /etc/nginx/.htpasswd exampleuser
 ```
 Referencias [Tutorial Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-http-authentication-with-nginx-on-ubuntu-12-10)
+
+# Hack para multiplas condições
+```
+    if ($request_uri = /) { 
+      set $test  A; 
+    } 
+  
+    if ($host ~* teambox.com) { 
+      set $test  "${test}B"; 
+    } 
+  
+    if ($http_cookie !~* "auth_token") { 
+      set $test  "${test}C"; 
+    } 
+    
+    if ($test = ABC) { 
+      proxy_pass http://teambox-cms.heroku.com; 
+      break; 
+    }
+```
