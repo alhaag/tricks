@@ -1,7 +1,7 @@
 # HTML
 
 ### Caracteres
-Os caracteres  correspondentes podem ser visualizados em modo de eição.
+Os caracteres  correspondentes podem ser visualizados em modo de edição.
 
 |Número|Descrição|Decimal|Hexa|Nome|Caracter|
 |--- |--- |--- |--- |--- |--- |
