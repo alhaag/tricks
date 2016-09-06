@@ -45,6 +45,18 @@ O downgrade foi realizado com o seguinte comando:
 ```shell
 $ sudo dnf downgrade python --allowerasing
 ```
+## Configuração
+Arquivo de configuração do Cassandra estalocalizado em **conf/cassandra.yaml**. Este arquivo define as principais configurações e é muito bem comentado.
+
+Segue algumas das principais diretivas:
+
+ * **cluster_name**: Este é o nome do seu cluster.
+ * **-seeds**: Esta é uma lista delimitada por vírgulas de o endereço IP de cada nó no cluster.
+ * **listen_address**: Este é o endereço IP que outros nós do cluster usará para se conectar a este. O padrão é localhost e as necessidades mudaram para o endereço IP do nó.
+ * **rpc_address**: Este é o endereço IP para chamadas de procedimento remoto. O padrão é localhost . Se o hostname do servidor está configurado corretamente, deixe este como é. Caso contrário, a mudança para o endereço IP do servidor ou o endereço de auto-retorno ( 127.0.0.1).
+ * **endpoint_snitch**: Nome do pomo, que é o que diz a Cassandra sobre o que sua rede se parece. Este padrão é SimpleSnitch , que é usado para as redes em um datacenter. No nosso caso, vamos alterá-lo para GossipingPropertyFileSnitch , que é o preferido para instalações de produção.
+ * **auto_bootstrap**: Esta directiva não está no arquivo de configuração, por isso tem de ser adicionado e definido como falso . Isso faz com que novos nós automaticamente usar os dados corretos. É opcional se você estiver adicionando nós a um cluster existente, mas necessária quando você está inicializando um novo cluster, ou seja, um sem dados.
+
 ## Client
 O acesso ao terminal client é realizado executando binario **cqlsh** seguido do node do cluster:
 ```shell
@@ -118,4 +130,5 @@ INSERT INTO user (name, addresses)
 ## Referências
  * http://cassandra.apache.org/doc
  * http://www.tutorialspoint.com/cassandra/
+ * https://www.digitalocean.com/community/tutorials/how-to-run-a-multi-node-cluster-database-with-cassandra-on-ubuntu-14-04
 
