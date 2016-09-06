@@ -1,6 +1,6 @@
 # Cassandra ![logo](http://cassandra.apache.org/img/cassandra_logo.png)
 
-Banco de dados NoSQL altamente escalável e flexível. Trabalha nativamente com o conceito de cluster.
+Banco de dados NoSQL de alto desempenho, altamente escalável e projetado para gerenciar grandes quantidades de dados estruturados. Oferece alta disponibilidade com nenhum ponto único de falha.
 
 ## Requisitos
  * Python 2.7
