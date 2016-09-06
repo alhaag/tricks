@@ -116,5 +116,6 @@ INSERT INTO user (name, addresses)
   * [DataStax](https://github.com/datastax/nodejs-driver)
 
 ## Referências
-http://cassandra.apache.org/doc
+ * http://cassandra.apache.org/doc
+ * http://www.tutorialspoint.com/cassandra/
 
