@@ -59,6 +59,10 @@ cqlsh> SELECT cluster_name, listen_address FROM system.local;
 
 (1 rows)
 ```
+## Drivers
+
+ * NodeJs
+  * [DataStax](https://github.com/datastax/nodejs-driver)
 
 ## Referências
 http://cassandra.apache.org/doc
