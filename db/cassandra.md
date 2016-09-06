@@ -68,7 +68,28 @@ Estes procedimentos devem ser executados em cada nó da rede.
  ```shell
  sudo rm -rf /path/to/cassandra/data/system/*
  ```
- 3. teste
+ 3. **Configurar cluster**, configurar as seguintes diretivas do arquivo **cassandra.yaml**:
+
+ ```shell
+ . . .
+cluster_name: 'CassandraDOCluster'
+. . .
+seed_provider:
+  - class_name: org.apache.cassandra.locator.SimpleSeedProvider
+    parameters:
+         - seeds: "your_server_ip,your_server_ip_2,...your_server_ip_n"
+. . .
+listen_address: your_server_ip
+. . .
+rpc_address: your_server_ip
+. . .
+endpoint_snitch: GossipingPropertyFileSnitch
+. . .
+# incluir no fim do arquivo caso não exista:
+auto_bootstrap: false
+ ```
+ 4. **Firewall**, liberar as portas.
+ 5. **Iniciar o processo**
 
 ## Client
 O acesso ao terminal client é realizado executando binario **cqlsh** seguido do node do cluster:
