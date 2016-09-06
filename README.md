@@ -2,7 +2,7 @@
 Documentação pessoal com dicas, lembretes e macetes sobre ferramentas voltadas para o desenvolvimento de software e linguagens de programação.
 
 Data bases
-  * [Casandra](db/casandra.md)
+  * [Cassandra DB](db/cassandra.md)
   * [DB2](db/index.md)
   * [MySQL](db/mysql.md)
   * [MongoDB](db/mongodb.md)
