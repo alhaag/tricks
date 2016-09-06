@@ -64,9 +64,11 @@ Estes procedimentos devem ser executados em cada nó da rede.
 
  1. **Parar o processo** cassandra, isso pode ser feito de várias formas dependendo de como o processo foi instalado.
  2. **Exclusão de dados padrão**:
+ 
  ```shell
  sudo rm -rf /path/to/cassandra/data/system/*
  ```
+ 3. teste
 
 ## Client
 O acesso ao terminal client é realizado executando binario **cqlsh** seguido do node do cluster:
