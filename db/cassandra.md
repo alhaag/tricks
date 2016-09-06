@@ -59,6 +59,28 @@ cqlsh> SELECT cluster_name, listen_address FROM system.local;
 
 (1 rows)
 ```
+
+## User-Defined Types (Create table)
+O CQL(Cassandra Query Language), permite a criação de tipos de dados definidos pelo usuário. Ex:
+```
+CREATE TYPE phone (
+    country_code int,
+    number text,
+)
+
+CREATE TYPE address (
+    street text,
+    city text,
+    zip int,
+    phones map<text, phone>
+)
+
+CREATE TABLE user (
+    name text PRIMARY KEY,
+    addresses map<text, frozen<address>>
+)
+```
+
 ## Drivers
 
  * NodeJs
