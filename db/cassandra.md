@@ -19,6 +19,7 @@ Baixar o tarball http://www.apache.org/dyn/closer.lua/cassandra/3.7/apache-cassa
 Descompactar o tarball:
 ```shell
 $ tar -xvf apache-cassandra-3.7-bin.tar.gz
+$ cd apache-cassandra-3.7/
 ```
 
 Após a extração subir o cluster executando:
@@ -26,6 +27,14 @@ Após a extração subir o cluster executando:
 $ bin/cassandra
 ```
 
+O status do processo pode ser verificado executando:
+```shell
+$ bin/nodetool status
+```
+
+O principal arquivo de configuração é o **conf/cassandra.yaml**
+
+### Problema enncontrado
 No Fedora 24 foi preciso fazer o downgrade do python 2.7.12 para 2.7.11, pois na execução do client ocorria o seguinte erro:
 ```shell
 $ bin/cqlsh localhost
@@ -36,5 +45,12 @@ O downgrade foi realizado com o seguinte comando:
 ```shell
 $ sudo dnf downgrade python --allowerasing
 ```
+## Client
+O acesso ao terminal client é realizado executando binario **cqlsh** seguido do node do cluster:
+```shell
+$ bin/cqlsh localhost
+```
 
+## Referências
+http://cassandra.apache.org/doc
 
