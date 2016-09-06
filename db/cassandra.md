@@ -57,6 +57,17 @@ Segue algumas das principais diretivas:
  * **endpoint_snitch**: Nome do pomo, que é o que diz a Cassandra sobre o que sua rede se parece. Este padrão é SimpleSnitch , que é usado para as redes em um datacenter. No nosso caso, vamos alterá-lo para GossipingPropertyFileSnitch , que é o preferido para instalações de produção.
  * **auto_bootstrap**: Esta directiva não está no arquivo de configuração, por isso tem de ser adicionado e definido como falso . Isso faz com que novos nós automaticamente usar os dados corretos. É opcional se você estiver adicionando nós a um cluster existente, mas necessária quando você está inicializando um novo cluster, ou seja, um sem dados.
 
+## Configurar cluster
+Este é exemplo simples para configuração de um cluster com vários nós.
+
+Estes procedimentos devem ser executados em cada nó da rede.
+
+ 1. **Parar o processo** cassandra, isso pode ser feito de várias formas dependendo de como o processo foi instalado.
+ 2. **Exclusão de dados padrão**:
+ ```shell
+ sudo rm -rf /path/to/cassandra/data/system/*
+ ```
+
 ## Client
 O acesso ao terminal client é realizado executando binario **cqlsh** seguido do node do cluster:
 ```shell
