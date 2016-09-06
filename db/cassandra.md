@@ -1,4 +1,4 @@
-# Casandra
+# Casandra ![logo](http://cassandra.apache.org/img/cassandra_logo.png)
 
 Banco de dados NoSQL altamente escalável e flexível. Trabalha nativamente com o conceito de cluster.
 
