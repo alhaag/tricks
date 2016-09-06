@@ -1,12 +1,12 @@
 # Casandra
 
-Banco de dados NoSQL altamente escalável e flexível. Trabalha nativamente com o conceito de clusters.
+Banco de dados NoSQL altamente escalável e flexível. Trabalha nativamente com o conceito de cluster.
 
 ## Requisitos
  * Python 2.7
  * Java 8
 
-A instalação do java 8 no fedora pode ser realizada baixando o RPM http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-i586.rpm
+A instalação do java 8 no Fedora pode ser realizada baixando o pacote RPM http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-i586.rpm
 
 Após o download executar:
 ```
@@ -22,7 +22,7 @@ $ tar -xvf apache-cassandra-3.7-bin.tar.gz
 $ cd apache-cassandra-3.7/
 ```
 
-Após a extração subir o cluster executando:
+Após a extração iniciar a execução do cluster executando:
 ```shell
 $ bin/cassandra
 ```
