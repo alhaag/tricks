@@ -89,6 +89,7 @@ endpoint_snitch: GossipingPropertyFileSnitch
 auto_bootstrap: false
  ```
  4. **Firewall**, liberar as portas 7000(TCP para comandos e dados) e 9042 (TCP para o servidor de transporte nativo. cqlsh). Ex:
+ 
  ```shell
  -A INPUT -p tcp -s your_other_server_ip -m multiport --dports 7000,9042 -m state --state NEW,ESTABLISHED -j ACCEPT
  ```
