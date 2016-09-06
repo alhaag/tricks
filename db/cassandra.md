@@ -88,7 +88,7 @@ endpoint_snitch: GossipingPropertyFileSnitch
 # incluir no fim do arquivo caso não exista:
 auto_bootstrap: false
  ```
- 4. **Firewall**, liberar as portas.
+ 4. **Firewall**, liberar as portas 7000(TCP para comandos e dados) e 9042 (TCP para o servidor de transporte nativo. cqlsh).
  5. **Iniciar o processo**
 
 ## Client
