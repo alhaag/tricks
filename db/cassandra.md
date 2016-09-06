@@ -50,6 +50,15 @@ O acesso ao terminal client é realizado executando binario **cqlsh** seguido do
 ```shell
 $ bin/cqlsh localhost
 ```
+```shell
+cqlsh> SELECT cluster_name, listen_address FROM system.local;
+
+ cluster_name | listen_address
+--------------+----------------
+ Test Cluster |      127.0.0.1
+
+(1 rows)
+```
 
 ## Referências
 http://cassandra.apache.org/doc
