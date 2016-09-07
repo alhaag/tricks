@@ -39,7 +39,7 @@ $ bin/nodetool status
 
 O principal arquivo de configuração é o **conf/cassandra.yaml**
 
-### Problema enncontrado
+### Problema encontrado
 No Fedora 24 foi preciso fazer o downgrade do python 2.7.12 para 2.7.11, pois na execução do client ocorria o seguinte erro:
 ```shell
 $ bin/cqlsh localhost
