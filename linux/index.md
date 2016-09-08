@@ -57,6 +57,8 @@ $ tcpdump -i any -s0 -w /tmp/dump.cap
 
 **-port 80** idica a porta que deve ser capturada
 
+------
+
 #### t50 - Testes de blindagem a DDos
 O t50 é uma ferramenta desenvolvida por um brasileiro para testes de ataque DDos.
 
