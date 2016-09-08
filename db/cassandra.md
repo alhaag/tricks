@@ -168,7 +168,9 @@ INSERT INTO user (name, addresses)
 ## Drivers
 
  * NodeJs
+  * [Express driver](http://expressjs.com/pt-br/guide/database-integration.html#cassandra) 
   * [DataStax](https://github.com/datastax/nodejs-driver)
+  
 
 ## Referências
  * http://cassandra.apache.org/doc
