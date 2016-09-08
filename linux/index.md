@@ -71,7 +71,7 @@ Escanear portas TCP (3 segundos):
 
 Escanear portas UDP (pode levar horas...):
 ```shell
-# nmap -sU -F 10.166.4.1
+# nmap -sU -F IP
 ```
 
 
