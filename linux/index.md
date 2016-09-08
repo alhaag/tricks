@@ -74,10 +74,6 @@ Escanear portas UDP (pode levar horas...):
 # nmap -sU -F IP
 ```
 
-
-
-
-
 #### t50 - Testes de blindagem a DDos
 O t50 é uma ferramenta desenvolvida por um brasileiro para testes de ataque DDos.
 
