@@ -57,6 +57,23 @@ $ tcpdump -i any -s0 -w /tmp/dump.cap
 
 **-port 80** idica a porta que deve ser capturada
 
+#### t50 - Testes de blindagem a DDos
+O t50 é uma ferramenta desenvolvida por um brasileiro para testes de ataque DDos.
+
+Para instalação deve ser baixado o tarball do endereço https://sourceforge.net/projects/t50 e executar os seguintes comandos:
+```shell
+$ tar xvf t50-5.6.6.tar.gz
+$ cd t50-5.6.6/
+$ ./configure
+$ make
+$ sudo make install
+```
+
+Para executar um teste de indisponibilidade executar o seguinte comando:
+```shell
+$ sudo t50 IP --flood --turbo -S --dport PORTA
+```
+
 ---
 
 ### SED
