@@ -59,6 +59,25 @@ $ tcpdump -i any -s0 -w /tmp/dump.cap
 
 ------
 
+#### NMAP
+A aplicação **nmap** permite escanear portas abertas de um determinado host. 
+
+Nomalmente não vem instalada por padrão, porém a maior parte dos sistemas operacionais possui esta pacote nos gerenciadores padrão, apt-get, yum, dnf, etc.
+
+Escanear portas TCP (3 segundos):
+```shell
+# nmap -p0- IP
+```
+
+Escanear portas UDP (pode levar horas...):
+```shell
+# nmap -sU -F 10.166.4.1
+```
+
+
+
+
+
 #### t50 - Testes de blindagem a DDos
 O t50 é uma ferramenta desenvolvida por um brasileiro para testes de ataque DDos.
 
