@@ -14,6 +14,11 @@ Verificar tamanho do diretorio corrente:
 $ du -sh
 ```
 
+Contar linhas de um arquivo:
+```shell
+$ wc -l file.txt
+```
+
 Contar arquivos recursivamente:
 ```shell
 $ find . -type f | wc -l
