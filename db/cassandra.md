@@ -115,6 +115,12 @@ cqlsh> SELECT cluster_name, listen_address FROM system.local;
 (1 rows)
 ```
 
+## Comandos básicos
+Listar keyspaces:
+```
+cqlsh> describe keyspaces;
+```
+
 ## User-Defined Types (Create table)
 O CQL(Cassandra Query Language), permite a criação de tipos de dados definidos pelo usuário.
 
