@@ -72,7 +72,7 @@ $ vi /home/cassandra/.bashrc
 Definir as variáves de ambiente e alias de acordo com a necessidade. Ex:
 -----------------------
 alias python='python2.7'
-alias cqs='python2.7'
+alias cqlsh='/cassandra/bin/cqlsh'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
