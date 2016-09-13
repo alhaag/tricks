@@ -66,8 +66,26 @@ $ passwd cassandra
 
 Definir configurações de path e alias específicas para o usuário cassandra:
 ```shell
-$ mkdir /home/cassandra
-$ chown cassandra:cassandra /home/cassandra
+$ su - cassandra
+$ vi /home/cassandra/.bashrc
+
+Definir as variáves de ambiente e alias de acordo com a necessidade. Ex:
+-----------------------
+alias python='python2.7'
+alias cqs='python2.7'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+JAVA_HOME=$JAVA_HOME:/home2/jdk1.8.0_101; export JAVA_HOME
+-----------------------
+
+$ exit
+```
+Executar o Cassandra com o usuário criado a partir do bash do root:
+```shell
+# runuser -l  cassandra -c '/home2/apache-cassandra-3.7/bin/cassandra'
 ```
 
 
