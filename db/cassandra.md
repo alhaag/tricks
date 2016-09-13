@@ -71,14 +71,24 @@ $ vi /home/cassandra/.bashrc
 
 Definir as variáves de ambiente e alias de acordo com a necessidade. Ex:
 -----------------------
+# .bashrc
+
+# User specific aliases and functions
+JAVA_HOME=/path/to/jdk1.8.0_101
+CASSANDRA_HOME=/path/to/apache-cassandra-3.7
+
+# Aliases
 alias python='python2.7'
-alias cqlsh='/cassandra/bin/cqlsh'
+alias cqlsh=${CASSANDRA_HOME}'/bin/cqlsh'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
-JAVA_HOME=$JAVA_HOME:/home2/jdk1.8.0_101; export JAVA_HOME
+
+# evironment vars
+export JAVA_HOME
+
 -----------------------
 
 $ exit
