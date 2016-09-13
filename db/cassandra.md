@@ -13,10 +13,11 @@ Após o download executar:
 $ sudo dnf install jdk-8u101-linux-x64.rpm
 ```
 
-É possível utilizar uma instalação do java de um path específico por meio de configuração no arquivo **tools/bin/cassandra.in.sh**
+Segundo a documentação, é possível utilizar uma instalação do java de um path específico por meio de configuração no arquivo **tools/bin/cassandra.in.sh**
 ```
 JAVA_HOME=/path/to/java
 ```
+Porém não funcionou nos testes realizados.
 
 ## Instalação
 Baixar o tarball http://www.apache.org/dyn/closer.lua/cassandra/3.7/apache-cassandra-3.7-bin.tar.gz 
@@ -46,10 +47,31 @@ $ bin/cqlsh localhost
 Connection error: ('Unable to connect to any servers', {'localhost': TypeError('ref() does not take keyword arguments',)})
 ```
 
-O downgrade foi realizado com o seguinte comando:
+O downgrade foi realizado com o seguinte comando no Fedora 24:
 ```shell
 $ sudo dnf downgrade python --allowerasing
 ```
+
+### Instalação com user específico (recomendado)
+Criar usuário e grupo:
+```shell
+$ groupadd cassandra
+$ useradd -g cassandra cassandra
+```
+
+Definir uma senha para o usuário(opcional):
+```shell
+$ passwd cassandra
+```
+
+Definir configurações de path e alias específicas para o usuário cassandra:
+```shell
+$ mkdir /home/cassandra
+$ chown cassandra:cassandra /home/cassandra
+```
+
+
+
 ## Configuração
 Arquivo de configuração do Cassandra estalocalizado em **conf/cassandra.yaml**. Este arquivo define as principais configurações e é muito bem comentado.
 
