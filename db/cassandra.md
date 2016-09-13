@@ -13,12 +13,6 @@ Após o download executar:
 $ sudo dnf install jdk-8u101-linux-x64.rpm
 ```
 
-Segundo a documentação, é possível utilizar uma instalação do java de um path específico por meio de configuração no arquivo **tools/bin/cassandra.in.sh**
-```
-JAVA_HOME=/path/to/java
-```
-Porém não funcionou nos testes realizados.
-
 ## Instalação
 Baixar o tarball http://www.apache.org/dyn/closer.lua/cassandra/3.7/apache-cassandra-3.7-bin.tar.gz 
 
