@@ -87,9 +87,14 @@ export JAVA_HOME
 
 $ exit
 ```
+Alterar as permissões do diretório do Cassandra para o usuário e grupo criado:
+```shell
+$ chown -R cassandra:casssandra /path/to/apache-casandra-3.7
+```
+
 Executar o Cassandra com o usuário criado a partir do bash do root:
 ```shell
-# runuser -l  cassandra -c '/home2/apache-cassandra-3.7/bin/cassandra'
+# runuser -l  cassandra -c '/path/to/apache-cassandra-3.7/bin/cassandra'
 ```
 
 
