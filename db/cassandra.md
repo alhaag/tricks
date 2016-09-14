@@ -104,7 +104,7 @@ Arquivo de configuração do Cassandra estalocalizado em **conf/cassandra.yaml**
 
 Segue algumas das principais diretivas:
 
- * **cluster_name**: Este é o nome do seu cluster.
+ * **cluster_name**: Este é o nome do seu cluster. Todos os nós do cluster devem possuir o mesmo nome.
  * **-seeds**: Esta é uma lista delimitada por vírgulas de o endereço IP de cada nó no cluster.
  * **listen_address**: Este é o endereço IP que outros nós do cluster usará para se conectar a este. O padrão é localhost e as necessidades mudaram para o endereço IP do nó.
  * **rpc_address**: Este é o endereço IP para chamadas de procedimento remoto. O padrão é localhost . Se o hostname do servidor está configurado corretamente, deixe este como é. Caso contrário, a mudança para o endereço IP do servidor ou o endereço de auto-retorno ( 127.0.0.1).
@@ -112,15 +112,13 @@ Segue algumas das principais diretivas:
  * **auto_bootstrap**: Esta directiva não está no arquivo de configuração, por isso tem de ser adicionado e definido como falso . Isso faz com que novos nós automaticamente usar os dados corretos. É opcional se você estiver adicionando nós a um cluster existente, mas necessária quando você está inicializando um novo cluster, ou seja, um sem dados.
 
 ## Configurar cluster
-Este é exemplo simples para configuração de um cluster com vários nós.
-
-Estes procedimentos devem ser executados em cada nó da rede.
+Este é exemplo simples para configuração de um cluster com vários nós, e deve ser executado em cada nó do cluster.
 
  1. **Parar o processo** cassandra, isso pode ser feito de várias formas dependendo de como o processo foi instalado.
  2. **Exclusão de dados padrão**:
  
  ```shell
- sudo rm -rf /path/to/cassandra/data/system/*
+ sudo rm -rf /path/to/cassandra/data/data/system/*
  ```
  3. **Configurar cluster**, configurar as seguintes diretivas do arquivo **cassandra.yaml**:
 
@@ -151,9 +149,10 @@ auto_bootstrap: false
 
 ## Client
 O acesso ao terminal client é realizado executando binario **cqlsh** seguido do node do cluster:
-```shell
+```
 $ bin/cqlsh localhost
 ```
+
 ```shell
 cqlsh> SELECT cluster_name, listen_address FROM system.local;
 
@@ -164,13 +163,43 @@ cqlsh> SELECT cluster_name, listen_address FROM system.local;
 (1 rows)
 ```
 
-## Comandos básicos
+# Comandos básicos
+
+## Keyspaces:
 Listar keyspaces:
 ```
 cqlsh> describe keyspaces;
 ```
 
-## User-Defined Types (Create table)
+Criar keyspace:
+```
+cqlsh> CREATE KEYSPACE new_cluster WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+```
+
+Alterar keyspace:
+```
+cqlsh> ALTER KEYSPACE dgt_cluster WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 3};
+```
+
+## Tables
+Criar tabela:
+```
+cqlsh> CREATE TABLE new_cluster.user (name text PRIMARY KEY, age int);
+```
+
+Insert:
+```
+cqlsh> INSERT INTO new_cluster.user (name, age) VALUES ('Andre Luiz Haag', 30);
+```
+
+Select:
+```
+cqlsh> SELECT * FROM new_cluster.user;
+```
+
+Obs: O Cassandra não suporta JOINS, transações e relacionamentos de tableas.
+
+## User-Defined Types
 O CQL(Cassandra Query Language), permite a criação de tipos de dados definidos pelo usuário.
 
 A criação de um novo tipo é definida por **CREATE TYPE**. Ex:
