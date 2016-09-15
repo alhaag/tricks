@@ -38,3 +38,12 @@ Referencias [Tutorial Digital Ocean](https://www.digitalocean.com/community/tuto
       break; 
     }
 ```
+
+## Extras
+Remover http para // como sulução de problemas relacionados quando atuando como proxy reverso:
+```
+server {
+    ...
+    proxy_redirect http://$host/ /;
+    ...
+```
