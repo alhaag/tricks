@@ -37,9 +37,11 @@ Reinicia a máquina para o últimno estado:
 $ vagrant reload
 ```
 
-Desliga a máquina e destroi o estado:
+Desligar a máquina:
 ```shell
-$ vagrant destroy --force
+$ vagrant suspend         # congela e mantem o estado
+$ vagrant halt            # desliga e mantem o estado
+$ vagrant destroy --force # destroi as alterações realizadas
 ```
 
 ## Referências
