@@ -42,4 +42,7 @@ Desliga a máquina e destroi o estado:
 $ vagrant destroy --force
 ```
 
+## Referências
+ * https://www.vagrantup.com/docs/
+ * https://gist.github.com/dergachev/3866825
 
