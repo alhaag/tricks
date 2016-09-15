@@ -56,6 +56,20 @@ Listar box baixas(disponiveis localmente):
 $ vagrant box list
 ```
 
+Ver demais opções:
+```shell
+$ vagrant box
+
+Available subcommands:
+     add
+     list
+     outdated
+     remove
+     repackage
+     update
+
+```
+
 ## Referências
  * https://www.vagrantup.com/docs/
  * https://gist.github.com/dergachev/3866825
