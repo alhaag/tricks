@@ -2,6 +2,11 @@
 
 ## Basico
 
+Listar variaveis de ambiente:
+```shell
+$ printenv
+```
+
 Ver nome e versão do SO:
 ```shell
 $ cat /etc/*-release
