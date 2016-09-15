@@ -8,7 +8,7 @@ $ sudo apt-get install vagrant
 ```
 
 ### Centos
-
+...
 
 ## Comandos básicos
 Adicionar uma imagem no vagrant:
