@@ -44,6 +44,18 @@ $ vagrant halt            # desliga e mantem o estado
 $ vagrant destroy --force # destroi as alterações realizadas
 ```
 
+## Listar VMs
+Obter informações de VMs, estado, etc:
+```shell
+$ vagrant global-status
+```
+
+## Manipulação de box
+Listar box baixas(disponiveis localmente):
+```shell
+$ vagrant box list
+```
+
 ## Referências
  * https://www.vagrantup.com/docs/
  * https://gist.github.com/dergachev/3866825
