@@ -1,6 +1,20 @@
 # Linux
 
-### File system
+## Basico
+
+Ver nome e versão do SO:
+```shell
+$ cat /etc/*-release
+CentOS release 5 (Final)
+```
+
+Obter informações do kernel e arquitetura:
+```shell
+$ uname -a
+Linux alhaag-Vostro-3560 4.2.0-42-generic #49-Ubuntu SMP Tue Jun 28 21:26:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+## File system
 
 Listar dispositivos de armazenamento:
 ```shell
@@ -38,7 +52,7 @@ $ sudo dd if=/dev/sdb1 of=file.iso
 
 ---
 
-### Rede
+## Rede
 Criar link para acesso a outra rede.
 
 Exemplo para liberar acesso ao IP 10.0.0.254 por meio da interface de rede **eth0**:
@@ -64,7 +78,7 @@ $ tcpdump -i any -s0 -w /tmp/dump.cap
 
 ------
 
-#### NMAP
+### NMAP
 A aplicação **nmap** permite escanear portas abertas de um determinado host. 
 
 Nomalmente não vem instalada por padrão, porém a maior parte dos sistemas operacionais possui esta pacote nos gerenciadores padrão, apt-get, yum, dnf, etc.
@@ -79,7 +93,7 @@ Escanear portas UDP (pode levar horas...):
 # nmap -sU -F IP
 ```
 
-#### t50 - Testes de blindagem a DDos
+### t50 - Testes de blindagem a DDos
 O t50 é uma ferramenta desenvolvida por um brasileiro para testes de ataque DDos.
 
 Para instalação deve ser baixado o tarball do endereço https://sourceforge.net/projects/t50 e executar os seguintes comandos:
@@ -98,7 +112,7 @@ $ sudo t50 IP --flood --turbo -S --dport PORTA
 
 ---
 
-### SED
+## SED
 Manipulação de conteúdo de arquivos com sed.
 
 Utilização básica:
@@ -114,7 +128,7 @@ Mais exemplos em [Só SED](http://thobias.org/doc/sosed.html)
 
 ---
 
-### SSH
+## SSH
 Liberar acesso por chave ssh
 ```shell
 $ ssh-copy-id <user>@<ip>
@@ -128,7 +142,7 @@ $ watch --interval=0.0 ls -lh
 ```
 ---
 
-### TAR
+## TAR
 Compactar lista de arquivos:
 ```shell
 $ tar -cvpf /tmp/foo.tar smain/sb1 smain/sb
