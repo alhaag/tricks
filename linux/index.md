@@ -7,6 +7,15 @@ Ver nome e versão do SO:
 $ cat /etc/*-release
 CentOS release 5 (Final)
 ```
+ou
+```
+$ lsb_release -a
+LSB Version:	:core-3.1-ia32:core-3.1-noarch:graphics-3.1-ia32:graphics-3.1-noarch
+Distributor ID:	CentOS
+Description:	CentOS release 5 (Final)
+Release:	5
+Codename:	Final
+```
 
 Obter informações do kernel e arquitetura:
 ```shell
