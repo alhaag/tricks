@@ -97,6 +97,9 @@ Available subcommands:
 
 ```
 
+Repositório público de boxes:
+https://atlas.hashicorp.com/boxes/search
+
 ## Referências
  * https://www.vagrantup.com/docs/
  * https://gist.github.com/dergachev/3866825
