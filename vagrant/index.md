@@ -82,6 +82,10 @@ Listar box baixas(disponiveis localmente):
 ```shell
 $ vagrant box list
 ```
+Criar um arquivo .box para reuso a partir do estado atual da VM:
+```shell
+$ vagrant package
+```
 
 Ver demais opções:
 ```shell
