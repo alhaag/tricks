@@ -31,6 +31,10 @@ $ npm install loopback-connector-mongodb --save
 ```
 
 ## Comandos para desenvolvimento:
-Iniciar StrongStudio: **strong-studio**
+Iniciar StrongStudio: 
+```shell
+$ cd <project_name>
+$ strong-studio
+```
 
 
