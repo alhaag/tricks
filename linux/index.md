@@ -84,7 +84,13 @@ Capturar pacotes de rede para analise no Wireshark:
 ```shell
 $ tcpdump -i any -s0 -w /tmp/dump.cap
 ```
-**-i any** qualquer interface de rede
+
+Capturar pacotes para analise no terminal:
+```shell
+$ tcpdump -nnnpi eth0 host 192.168.10.1 and proto UDP
+```
+
+**-i** interface de rede
 
 **-s0** gera capturas ilimitadas
 
