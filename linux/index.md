@@ -58,10 +58,34 @@ $ umount /dev/sdb1
 $ mkfs.vfat /dev/sdb1
 ```
 
-Copiar imagem ISO para o pendrive
+Copiar imagem ISO para o pendrive:
 ```shell
 $ umount /dev/sdb1
 $ sudo dd if=/dev/sdb1 of=file.iso
+```
+
+Verificar codificação de arquivo:
+```shell
+$ file -i file.txt
+file.txt: text/plain; charset=utf-8
+```
+
+Alterar codificação do arquivo:
+```shell
+$ iconv -f ISO-8859-1 -t UTF-8 file.old > file.new
+```
+
+Alterar codificação de arquivos recursivamente:
+```shell
+#!/bin/bash
+find ./ -name "*.php" -o -name "*.html" -o -name "*.css" -o -name "*.js"  -type f |
+while read file
+do
+  echo " $file"
+  mv $file $file.icv
+  iconv -f ISO-8859-1 -t UTF-8 $file.icv > $file
+  rm -f $file.icv
+done
 ```
 
 ---
