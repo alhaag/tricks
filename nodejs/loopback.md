@@ -31,10 +31,10 @@ $ npm install loopback-connector-mongodb --save
 ```
 
 ## Comandos para desenvolvimento:
-Iniciar StrongStudio: 
+Iniciar StrongLoop Arc para manipulação visual de modelos e dasources: 
 ```shell
 $ cd <project_name>
-$ strong-studio
+$ slc arc
 ```
 
 
