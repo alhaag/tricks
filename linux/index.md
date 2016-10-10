@@ -27,6 +27,15 @@ Obter informações do kernel e arquitetura:
 $ uname -a
 Linux alhaag-Vostro-3560 4.2.0-42-generic #49-Ubuntu SMP Tue Jun 28 21:26:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 ```
+## curl
+Exemplos de utilização:
+```shell
+## GET
+$ $ curl http://host/resource
+
+## POST
+$ curl -d "paramn1=value&paramn2=value" http://host/resource
+```
 
 ## File system
 
