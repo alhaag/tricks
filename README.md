@@ -18,6 +18,7 @@ Data bases
 [HTML](html/index.md)
 
 [Linux](linux/index.md)
+  * [curl](linux/index.md#curl)
   * [File system](linux/index.md#file-system)
   * [Rede](linux/index.md#rede)
   * [SED](linux/index.md#sed)
