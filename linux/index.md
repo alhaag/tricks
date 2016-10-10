@@ -31,7 +31,7 @@ Linux alhaag-Vostro-3560 4.2.0-42-generic #49-Ubuntu SMP Tue Jun 28 21:26:26 UTC
 Exemplos de utilização:
 ```shell
 ## GET
-$ $ curl http://host/resource
+$ curl http://host/resource
 
 ## POST
 $ curl -d "paramn1=value&paramn2=value" http://host/resource
