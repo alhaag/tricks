@@ -218,3 +218,14 @@ Extrair um arquivo específico do tarball:
 ```shell
 $ tar xvf /home/file.tgz /path/file.txt
 ```
+
+## ZIP
+Vizualizar conteúdo:
+```shell
+$ zipinfo foo.zip
+```
+
+Extrair arquivo ZIP:
+```shell
+$ unzip foo.zip
+```
