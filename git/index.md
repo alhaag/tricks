@@ -8,3 +8,8 @@ Criação de TAG:
 $ git tag -a v0.0.1 -m "Comment"
 $ git push origin v0.0.1
 ```
+
+Ignorar modificação de permissão de arquivos:
+```shell
+$ git config --global core.fileMode false
+```
