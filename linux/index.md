@@ -51,6 +51,11 @@ Verificar tamanho do diretorio corrente:
 $ du -sh
 ```
 
+Verificar tamanho do diretório corrente detalahndo arquivos e diretórios:
+```shell
+$ du -sk * | sort -h
+```
+
 Contar linhas de um arquivo:
 ```shell
 $ wc -l file.txt
