@@ -25,6 +25,7 @@ Data bases
   * [SED](linux/index.md#sed)
   * [SSH](linux/index.md#ssh)
   * [TAR](linux/index.md#tar)
+  * [Users e Groups](linux/index.md#users-e-groups)
   * [ZIP](linux/index.md#zip)
 
 [Nginx](nginx/index.md)
