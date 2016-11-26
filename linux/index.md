@@ -224,6 +224,15 @@ Extrair um arquivo específico do tarball:
 $ tar xvf /home/file.tgz /path/file.txt
 ```
 
+## Users e Groups
+
+Para possibilitar operações de root sem inserir senha, incluir no arquivo **/etc/sudoers**:
+
+```shell
+## Permition 'user' sudo less password
+user  ALL=(ALL) NOPASSWD: ALL
+```
+
 ## ZIP
 Vizualizar conteúdo:
 ```shell
