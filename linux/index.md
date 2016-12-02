@@ -201,6 +201,9 @@ Gerar uma chave RSA local:
 $ ssh-keygen
 $ ls ~/.ssh
 authorized_keys2  id_dsa  known_hosts   config  id_dsa.pub
+
+$cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDILg/SCzmm29Nd4F/8q4M+imp3tw6c7sd47tgreOappkdhCsZa4uz3Qetc4rejwbLOrIDRlgCoGkROsahzpGIE7DaWvNsfjh1HV2zo175T5o+covHGDie7zPTfZjRuQy6cVnatu8DZWCDbujaqKaYSE2zoZ9hEb+9W138wdCKZSuery87aw+z3llkWyji+P4F9c/Z7ep4SgMuNi8xFJvFTnVr4I1ShYlmzTJqFrIZWXIcD46IM4uht6d3+n5CYGtMpIU3gnGLHZjlRobvhMzvLdC5lit4OUqs4QJoe+p3WOSN+BmQGjnUNKsQBTnfqpthfuroe874hgd9rtyuGg+AiEr user@hostname
 ```
 
 Depuração de problemas relacionados ao SSH:
