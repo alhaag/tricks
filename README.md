@@ -25,6 +25,7 @@ Data bases
   * [Rede](linux/index.md#rede)
   * [SED](linux/index.md#sed)
   * [SSH](linux/index.md#ssh)
+  * [TELNET](linux/index.md#telnet)
   * [TAR](linux/index.md#tar)
   * [Users e Groups](linux/index.md#users-e-groups)
   * [ZIP](linux/index.md#zip)
