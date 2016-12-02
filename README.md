@@ -18,6 +18,7 @@ Data bases
 [HTML](html/index.md)
 
 [Linux / Shell](linux/index.md)
+  * [AWK](linux/index.md#awk)
   * [curl](linux/index.md#curl)
   * [File system](linux/index.md#file-system)
   * [ISO](linux/index.md#iso)
