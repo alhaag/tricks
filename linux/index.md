@@ -28,6 +28,8 @@ $ uname -a
 Linux alhaag-Vostro-3560 4.2.0-42-generic #49-Ubuntu SMP Tue Jun 28 21:26:26 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
+---
+
 ## AWK
 A linguagem awk é muito conhecida por sua eficácia em criar filtros de conteúdos de arquivos.
 
@@ -38,6 +40,8 @@ $ ps aux | grep ngix | awk '{ print $2 }'
 
 mais exemplos em: https://www.vivaolinux.com.br/dica/Awk-Uma-poderosa-ferramenta-de-analise
 
+---
+
 ## curl
 Exemplos de utilização:
 ```shell
@@ -47,6 +51,8 @@ $ curl http://host/resource
 ## POST
 $ curl -d "paramn1=value&paramn2=value" http://host/resource
 ```
+
+---
 
 ## File system
 
@@ -268,6 +274,8 @@ Extrair um arquivo específico do tarball:
 $ tar xvf /home/file.tgz /path/file.txt
 ```
 
+---
+
 ## Users e Groups
 
 Para possibilitar operações de root sem inserir senha, incluir no arquivo **/etc/sudoers**:
@@ -276,6 +284,8 @@ Para possibilitar operações de root sem inserir senha, incluir no arquivo **/e
 ## Permition 'user' sudo less password
 user  ALL=(ALL) NOPASSWD: ALL
 ```
+
+---
 
 ## ZIP
 Vizualizar conteúdo:
