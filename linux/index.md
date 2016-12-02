@@ -200,10 +200,7 @@ Estabelecer conexão:
 $ telnet <ip_ou_host> <porta>
 telnet>
 ```
-
-
-
-
+Mais detalhes em: http://www.computerhope.com/unix/utelnet.htm
 
 ---
 
