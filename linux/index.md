@@ -196,6 +196,22 @@ Mais exemplos em [Só SED](http://thobias.org/doc/sosed.html)
 ---
 
 ## SSH
+Gerar uma chave RSA local:
+```shell
+$ ssh-keygen
+$ ls ~/.ssh
+authorized_keys2  id_dsa  known_hosts   config  id_dsa.pub
+```
+
+Depuração de problemas relacionados ao SSH:
+```shell
+$ ssh <user>@<ip> -vvv
+```
+Realizar SSH informando uma chave de um path específico:
+```shell
+$ ssh <user>@<ip> -i /path/to/key
+```
+
 Liberar acesso por chave ssh
 ```shell
 $ ssh-copy-id <user>@<ip>
