@@ -172,6 +172,7 @@ Escanear portas UDP (pode levar horas...):
 ```
 
 ### t50 - Testes de blindagem a DDos
+
 O t50 é uma ferramenta desenvolvida por um brasileiro para testes de ataque DDos.
 
 Para instalação deve ser baixado o tarball do endereço https://sourceforge.net/projects/t50 e executar os seguintes comandos:
@@ -187,6 +188,22 @@ Para executar um teste de indisponibilidade executar o seguinte comando:
 ```shell
 $ sudo t50 IP --flood --turbo -S --dport PORTA
 ```
+
+---
+
+## TELNET
+
+Protocolo de comunicação para execução de comandos sobre um determinado host.
+
+Estabelecer conexão:
+```
+$ telnet <ip_ou_host> <porta>
+telnet>
+```
+
+
+
+
 
 ---
 
