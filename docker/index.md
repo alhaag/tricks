@@ -97,4 +97,38 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+## Utilização
 
+Exemplo de arquivo descritor de containers **docker-compose.yml**:
+```yml
+web: 
+  image: nginx:latest
+  ports:
+   - "80:80"
+  volumes:
+   - /home/alhaag/Projects:/var/www/html
+   - /home/alhaag/env/dsc-conf-dev/nginx.d:/etc/nginx/conf.d
+  links:
+   - php-fpm
+
+php-fpm:
+  image: php:7-fpm
+  ports:
+   - "9000:9000"
+  volumes:
+   #- /home/alhaag/env/dsc-conf-dev/php-fpm.d:/etc/php/7.0/fpm/pool.d
+   - /home/alhaag/Projects:/var/www/html
+
+mysql:
+  image: mysql
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: 123456
+```
+
+Para inicializar a estrutura de containers, executar o seguinte comando no diretório onde está o arquivo descritor:
+
+```shell
+$ sudo docker-compose up
+```
