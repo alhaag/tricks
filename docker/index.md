@@ -82,3 +82,12 @@ Comitar estado atual de um container (isso cria uma copia do container)
 ```shell
 sudo docker commit <container_id> <nome_novo_container>
 ```
+
+# Docker compose
+É uma extenção do docker que permite criar composições de containers de forma declarativa.
+
+## Instalação
+
+```
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
