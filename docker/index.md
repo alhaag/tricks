@@ -3,55 +3,59 @@
 ## Instalação
 
 ```shell
-curl -sSL https://get.docker.com | sh
+$ curl -sSL https://get.docker.com | sh
 ```
-### Obter informações
-
+### Operações gerais
 Obter status dos containers
 ```shell
-sudo docker ps
+$ sudo docker ps
 ```
 
 Listar imagens disponíveis na máquina
 ```shell
-sudo docker images
+$ sudo docker images
 ```
 
 Ver modificações realizadas em um container
 ```shell
-sudo docker diff <container_id>
+$ sudo docker diff <container_id>
 ```
 
 Ver informações detalhadas de um container
 ```shell
-sudo docker inspect <container_id>
+$ sudo docker inspect <container_id>
 ```
 
 Verificar consumo de recuros do docker
 ```shell
-sudo docker stats
+$ sudo docker stats
 ```
 
-### Criar containers
+### Operações sobre containers
 
-Criar um novo container
+**Criar** um novo container:
 ```shell
-sudo docker run -it <nome_imagem> /bin/bash
+$ sudo docker run -it <nome_imagem> /bin/bash
 ```
 
-Para mapear a porta pode ser usado o parâmetro -p
+**Criar** container mapeando porta com o host hospedeiro com o parâmetro -p:
 ```shell
-sudo docker run -it -p 8080:80 <nome_imagem> /bin/bash
+$ sudo docker run -it -p 8080:80 <nome_imagem> /bin/bash
 ```
 
-Criar container que se comunica com outro container
+**Criar** container que se comunica com outro container
 ```shell
-sudo docker run -it --name <host_name_1> --link [nome_container]:<host_name_2> <nome_novo_container>
+$ sudo docker run -it --name <host_name_1> --link [nome_container]:<host_name_2> <nome_novo_container>
 ```
 
-Criar container a partir de um arquivo Dockerfile. Só pode existir um arquivo por diretório
+**Criar** container a partir de um arquivo **Dockerfile**(só pode existir um arquivo por diretório e o comando deve ser executado no diretório onde o Docker file está localizado):
 ```shell
-docker build -t <nome_container> .
+$ docker build -t <nome_container> .
+```
+
+**Acessar o bash** de um container em execução com o exec (esta opção pode ser utilizada para executar diversos outros comando sobre o container):
+```
+$ sudo docker exec -it <container_id> /bin/bash
 ```
 
 ### Sair, finalizar e excluir containers e imagens
@@ -90,4 +94,7 @@ sudo docker commit <container_id> <nome_novo_container>
 
 ```
 $ sudo curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
 ```
+
+
