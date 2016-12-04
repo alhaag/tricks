@@ -31,6 +31,11 @@ Verificar consumo de recuros do docker
 $ sudo docker stats
 ```
 
+Remover uma imagem:
+```shell
+sudo docker rmi <imagem_id>
+```
+
 ### Operações sobre containers
 
 **Criar** um novo container:
@@ -58,26 +63,21 @@ $ docker build -t <nome_container> .
 $ sudo docker exec -it <container_id> /bin/bash
 ```
 
-### Sair, finalizar e excluir containers e imagens
-
-Sair de um container sem encerrar a execução
+**Sair** de um container sem encerrar a execução:
 ```shell
-[ctrl] + [p] + [q]
+<ctrl> + <p> + <q>
+ou
+<ctrl> + <d>
 ```
 
-Encerrar um container
+**Encerrar(desligar)** um container:
 ```shell
-sudo docker stop <container_id>
+$ sudo docker stop <container_id>
 ```
 
-Remover um container
+**Remover** um container:
 ```shell
-sudo docker rm <container_id>
-```
-
-Remover uma imagem
-```shell
-sudo docker rmi <imagem_id>
+$ sudo docker rm <container_id>
 ```
 
 ### Comitar containers
