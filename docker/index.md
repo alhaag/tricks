@@ -132,3 +132,9 @@ Para inicializar a estrutura de containers, executar o seguinte comando no diret
 ```shell
 $ sudo docker-compose up
 ```
+
+## Docker HUB
+
+Repositório de imagens:
+
+https://hub.docker.com/explore/
