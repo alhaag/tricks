@@ -136,6 +136,8 @@ Criar link para acesso a outra rede.
 Exemplo para liberar acesso ao IP 10.0.0.254 por meio da interface de rede **eth0**:
 ```shell
 $ sudo ifconfig eth0:0 10.0.0.5
+## PAra remover:
+$ sudo ifconfig eth0:0 down
 ```
 Verificar listen ports
 ```shell
