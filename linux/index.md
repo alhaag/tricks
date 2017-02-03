@@ -139,6 +139,12 @@ $ sudo ifconfig eth0:0 10.0.0.5
 ## PAra remover:
 $ sudo ifconfig eth0:0 down
 ```
+
+Para adicionar uma rota:
+```
+$ sudo route add -net <IP_REDE>/24 gw <IP_GATEWAY>
+```
+
 Verificar listen ports
 ```shell
 $ netstat -npa | grep 80
