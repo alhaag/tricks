@@ -168,6 +168,13 @@ $ tcpdump -nnnpi eth0 host 192.168.10.1 and proto UDP
 
 **-port 80** idica a porta que deve ser capturada
 
+Realizar testes com limite de velociade de download e upload:
+```
+$ sudo apt-get install trickle
+$ sudo trickle -vvv -d 10 -u 5 firefox
+```
+Obs: velocidade em Kbytes
+
 ------
 
 ### NMAP
