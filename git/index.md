@@ -25,7 +25,7 @@ $ git push origin v0.0.1
 or
 ```shell
 $ git tag v0.0.1
-$ git push origin <brach> --tags
+$ git push origin <branch> --tags
 ```
 
 ### Configuration
