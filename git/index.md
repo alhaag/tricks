@@ -22,6 +22,12 @@ Create TAG:
 $ git tag -a v0.0.1 -m "Comment"
 $ git push origin v0.0.1
 ```
+ou
+```shell
+$ git tag v0.0.1
+$ git push origin <brach> --tags
+```
+
 ### Configuration
 
 Ignore filemod:
