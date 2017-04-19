@@ -16,6 +16,12 @@ $ git log origin/refactory..refactory
 
 ### TAG
 
+View TAGs:
+```shell
+$ git tag
+```
+
+
 Create TAG:
 
 ```shell
