@@ -59,5 +59,6 @@ Local light web interface to view changes:
 ```
 $ sudo apt install lighttpd
 $ cd project
-$ git instaweb
+$ git instaweb (access on 127.0.0.1:1234)
+$ git instaweb --stop
 ```
