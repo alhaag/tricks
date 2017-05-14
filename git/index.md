@@ -53,3 +53,13 @@ function parse_git_branch () {
 PS1="\n\[$IGrey\]┌──[\D{%d/%m/%y-%H:%M:%S}]──(\[$IGreen\]\u@\h\[$IGrey\]:\[$IBlue\]\w\[$IGrey\] \$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //'))\[$IYellow\]\$(parse_git_branch) \n\[$IGrey\]└> \[$IGreen\]$ \[$White\]"
 
 ```
+
+### Extras
+Local light web interface to view changes:
+```
+$ sudo apt install lighttpd
+$ cd prroject
+$ git instaweb
+
+
+```
