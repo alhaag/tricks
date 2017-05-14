@@ -58,6 +58,6 @@ PS1="\n\[$IGrey\]┌──[\D{%d/%m/%y-%H:%M:%S}]──(\[$IGreen\]\u@\h\[$IGrey
 Local light web interface to view changes:
 ```
 $ sudo apt install lighttpd
-$ cd prroject
+$ cd project
 $ git instaweb
 ```
