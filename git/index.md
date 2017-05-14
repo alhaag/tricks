@@ -60,6 +60,4 @@ Local light web interface to view changes:
 $ sudo apt install lighttpd
 $ cd prroject
 $ git instaweb
-
-
 ```
