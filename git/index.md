@@ -62,3 +62,19 @@ $ cd project
 $ git instaweb (access on 127.0.0.1:1234)
 $ git instaweb --stop
 ```
+
+Diff with Meld:
+```
+$ sudo apt-get install meld
+
+# NEW FILE ~/scripts/gitDiff.py
+--------
+#!/usr/bin/python
+import sys
+import os
+os.system('meld "%s" "%s"' % (sys.argv[2], sys.argv[5]))
+--------
+
+$ git config --global diff.external ~/scripts/gitDiff.py
+```
+
