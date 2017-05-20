@@ -29,6 +29,7 @@ $ docker inspect <container_id>
 Verificar consumo de recuros do docker
 ```shell
 $ docker stats
+$ docker stats $(docker ps --format={{.Names}})
 ```
 
 Remover uma imagem:
@@ -103,7 +104,7 @@ $ docker commit <container_id> <nome_novo_container>
 ## Instalação
 
 ```
-$ sudo curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.13.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
@@ -139,8 +140,18 @@ mysql:
 
 Para inicializar a estrutura de containers, executar o seguinte comando no diretório onde está o arquivo descritor:
 
-```shell
-$ sudo docker-compose up
+```
+$ docker-compose up
+```
+
+Parar todos os serviços:
+```
+$ docker-compose stop
+```
+
+Reiniciar um serviço específico:
+```
+$ docker-compose restart $servico
 ```
 
 ## Docker HUB
