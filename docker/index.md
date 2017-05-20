@@ -154,6 +154,17 @@ Reiniciar um serviço específico:
 $ docker-compose restart $servico
 ```
 
+## Swarm (docker stack)
+Iniciar servicos de um docker compose file:
+```
+$ docker stack deploy --compose-file file-stack.yml $stack_name
+```
+
+Parar servicos publicados:
+```
+$ docker stack rm $stack_name
+```
+
 ## Docker HUB
 
 Repositório de imagens:
