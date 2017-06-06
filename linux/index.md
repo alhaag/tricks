@@ -83,6 +83,12 @@ Contar arquivos recursivamente:
 $ find . -type f | wc -l
 ```
 
+Alterar permisões recursivamente e por tipo:
+```
+$ find /diretorio -type d -exec chmod 0755 {} \;
+$ find /diretorio -type f -exec chmod 0644 {} \;
+```
+
 Formatar pendrive. Para um pendrive montado em /dev/sdb1, executar:
 ```shell
 $ umount /dev/sdb1
