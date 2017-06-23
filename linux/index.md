@@ -137,8 +137,12 @@ $ sudo dd if=/dev/sdb1 of=file.iso
 ---
 
 ## Processos
-Ver data e hora da subida de um processo:
+Ver arvore de processos na ordem de subida:
+```
+$ pstree -np | less
+```
 
+Ver data e hora da subida de um processo:
 ```shell
 $ ps axo comm,lstart|grep XXXXXX
 ```
