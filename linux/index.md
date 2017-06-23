@@ -291,7 +291,7 @@ Listar Unit files:
 systemctl list-unit-files
 ```
 
-Ordem de execução dos units:
+Ordem de precedência dos units:
 ```
 1. /etc/systemd/system
 2. /run/systemd/system
