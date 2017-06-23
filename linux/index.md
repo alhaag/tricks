@@ -306,6 +306,13 @@ systemctl restart name.service
 ...
 ```
 
+Ver logs:
+```
+$ journalctl  (todos)
+$ journalctl -u nginx.service (por serviço)
+$ journalctl -u nginx.service --since today (dia atual)
+```
+
 Referencias:
 https://fedoramagazine.org/systemd-getting-a-grip-on-units/
 
