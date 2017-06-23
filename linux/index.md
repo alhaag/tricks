@@ -281,6 +281,23 @@ $ ssh-copy-id <user>@<ip>
 ```
 ---
 
+## SystemD
+Listar Unit files:
+```
+systemctl list-unit-files
+```
+
+Ações sobre serviços:
+```
+systemctl start name.service
+systemctl stop name.service
+systemctl restart name.service
+...
+```
+
+Referencias:
+https://fedoramagazine.org/systemd-getting-a-grip-on-units/
+
 ### Watch
 Loop de execução de comando por timer definido. Útil para verificar alterações em tempo real:
 ```shell
