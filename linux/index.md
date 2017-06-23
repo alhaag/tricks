@@ -311,6 +311,8 @@ Ver logs:
 $ journalctl  (todos)
 $ journalctl -u nginx.service (por serviço)
 $ journalctl -u nginx.service --since today (dia atual)
+$ journalctl -k (logs do kernel)
+$ journalctl -f (Following Logs)
 ```
 
 Referencias:
