@@ -298,6 +298,11 @@ Ordem de precedência dos units:
 3. /usr/lib/systemd/system
 ```
 
+Recarrega o systemd, scaneando por units novas e modificadas:
+```
+$ systemctl daemon-reload
+```
+
 Niveis de execução:
 ```
 $ ls -ltr /lib/systemd/system/runlevel*
