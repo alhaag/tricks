@@ -352,6 +352,8 @@ $ journalctl -f (Following Logs)
 Referencias:
 https://fedoramagazine.org/systemd-getting-a-grip-on-units/
 
+https://wiki.archlinux.org/index.php/Systemd_(Português)
+
 ### Watch
 Loop de execução de comando por timer definido. Útil para verificar alterações em tempo real:
 ```shell
