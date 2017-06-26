@@ -298,6 +298,35 @@ Ordem de precedência dos units:
 3. /usr/lib/systemd/system
 ```
 
+Niveis de execução:
+```
+$ ls -ltr /lib/systemd/system/runlevel*
+lrwxrwxrwx. 1 root root 13 Jun  4 20:49 /lib/systemd/system/runlevel1.target -> rescue.target
+lrwxrwxrwx. 1 root root 15 Jun  4 20:49 /lib/systemd/system/runlevel0.target -> poweroff.target
+lrwxrwxrwx. 1 root root 17 Jun  4 20:49 /lib/systemd/system/runlevel2.target -> multi-user.target
+lrwxrwxrwx. 1 root root 17 Jun  4 20:49 /lib/systemd/system/runlevel3.target -> multi-user.target
+lrwxrwxrwx. 1 root root 17 Jun  4 20:49 /lib/systemd/system/runlevel4.target -> multi-user.target
+lrwxrwxrwx. 1 root root 16 Jun  4 20:49 /lib/systemd/system/runlevel5.target -> graphical.target
+lrwxrwxrwx. 1 root root 13 Jun  4 20:49 /lib/systemd/system/runlevel6.target -> reboot.target
+```
+
+Obter nível de execução atual:
+```
+$ systemctl get-default
+graphical.target
+```
+
+Explanação sobre níveis de execução:
+```
+0	poweroff.target
+1	rescue.target
+2	multi-user.target
+3	multi-user.target
+4	multi-user.target
+5	graphical.target
+6	reboot.target
+```
+
 Ações sobre serviços:
 ```
 systemctl start name.service
