@@ -14,7 +14,7 @@ Check which commits have not been pushed to origin:
 $ git log origin/refactory..refactory
 ```
 
-# Reverts
+## Reverts
 Revert all file mode changes:
 ```
 $ git diff -p \
