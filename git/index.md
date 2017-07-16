@@ -14,6 +14,20 @@ Check which commits have not been pushed to origin:
 $ git log origin/refactory..refactory
 ```
 
+# Reverts
+Revert all file mode changes:
+```
+$ git diff -p \
+    | grep -E '^(diff|old mode|new mode)' \
+    | sed -e 's/^old/NEW/;s/^new/old/;s/^NEW/new/' \
+    | git apply
+```
+
+Revert file modifications:
+```
+$ git checkout file.txt 
+```
+
 ### TAG
 
 View TAGs:
