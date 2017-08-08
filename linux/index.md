@@ -149,7 +149,12 @@ $ ps axo comm,lstart|grep XXXXXX
 
 Verificar consumo de memória de um processo:
 ```
-$pmap -x $pid
+$ pmap -x $pid
+```
+ou
+
+```
+$ ps -eo size,pid,user,command --sort -size | awk '{ hr=$1/1024 ; printf("%13.2f Mb ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }'
 ```
 
 top filtros:
