@@ -146,6 +146,18 @@ Ver data e hora da subida de um processo:
 ```shell
 $ ps axo comm,lstart|grep XXXXXX
 ```
+
+Verificar consumo de memória de um processo:
+```
+$pmap -x $pid
+```
+
+top filtros:
+```
+## ordenar por consumo de ram
+ps aux --sort -rss
+```
+
 ---
 
 ## Rede
