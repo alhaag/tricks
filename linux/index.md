@@ -131,7 +131,7 @@ $ isoinfo -f -i foo.iso
 Copiar imagem ISO para o pendrive:
 ```shell
 $ umount /dev/sdb1
-$ sudo dd if=/dev/sdb1 of=file.iso
+$ sudo dd if=file.iso of=/dev/sdb1
 ```
 
 ---
