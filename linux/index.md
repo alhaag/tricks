@@ -212,6 +212,42 @@ Obs: velocidade em Kbytes
 
 ------
 
+### NFS
+Configurar Network File System para compartilhamento de arquivos em redes linux:
+**Server:**
+```
+$ sudo yum install nfs-utils
+$ mkdir /var/public
+$ chmod -R 777 /var/public
+$ chown -R nfsnobody:nfsnobody /var/public
+$ echo "/var/public 192.168.10.0/255.255.255.0(rw)" >> /etc/exports
+$ sudo exportfs -a
+$ showmount -e
+$ sudo systemctl enable rpcbind
+$ sudo systemctl enable nfs-server
+$ sudo systemctl enable nfs-lock
+$ sudo systemctl enable nfs-idmap
+$ sudo systemctl start rpcbind
+$ sudo systemctl start nfs-server
+$ sudo systemctl start nfs-lock
+$ sudo systemctl start nfs-idmap
+```
+
+**Client:**
+```
+$ sudo yum install nfs-utils
+$ systemctl enable rpcbind
+$ systemctl enable nfs-server
+$ systemctl enable nfs-lock
+$ systemctl enable nfs-idmap
+$ systemctl start rpcbind
+$ systemctl start nfs-server
+$ systemctl start nfs-lock
+$ systemctl start nfs-idmap
+$ mkdir /var/public
+$ mount –t nfs 192.168.10.254:/home/public /home/public
+```
+
 ### NMAP
 A aplicação **nmap** permite escanear portas abertas de um determinado host. 
 
