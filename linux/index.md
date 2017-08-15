@@ -214,7 +214,9 @@ Obs: velocidade em Kbytes
 
 ### NFS
 Configurar Network File System para compartilhamento de arquivos em redes linux:
+
 **Server:**
+
 ```
 $ sudo yum install nfs-utils
 $ mkdir /var/public
@@ -234,6 +236,7 @@ $ sudo systemctl start nfs-idmap
 ```
 
 **Client:**
+
 ```
 $ sudo yum install nfs-utils
 $ systemctl enable rpcbind
