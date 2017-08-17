@@ -121,6 +121,25 @@ done
 
 ---
 
+## Hardware
+
+Informações sobre o hardware
+
+Detalhes gerais:
+```
+$ dmidecode
+```
+
+Detalhes dos bancos de memória RAM:
+```
+$ dmidecode --type 17
+```
+
+Outra forma de obter detalhes da CPU:
+```
+cat /proc/cpuinfo
+```
+
 ## ISO
 
 Visualizar conteúdo do arquivo:
