@@ -28,3 +28,19 @@ Interface gráfica i3 mais pacotes extras:
 ```
 # dnf install i3 i3status i3lock
 ```
+
+## Removendo o XFCE4(Opcional)
+```
+# dnf groups remove "Xfce Desktop"
+```
+
+## Inicialização do i3
+criar ~/.xinitrc para uso do startx:
+```
+$ echo "exec i3" > ~/.xinitrc
+```
+Reboot e após o login execute o seguinte comando para iniciar o i3wm:
+```
+$ startx
+```
+
