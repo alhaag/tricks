@@ -14,4 +14,17 @@ https://spins.fedoraproject.org/xfce/download/index.html
 # dnf update
 ```
 
+## Instalação Fedy (opcional)
 
+Instalador de de pacotes
+```
+# sh -c 'curl https://www.folkswithhats.org/installer | bash'
+```
+
+## Instalação do i3wm
+
+Interface gráfica i3 mais pacotes extras:
+
+```
+# dnf install i3 i3status i3lock
+```
