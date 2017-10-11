@@ -6,7 +6,7 @@ Data bases
   * [DB2](db/index.md)
   * [MySQL](db/mysql.md)
   * [MongoDB](db/mongodb.md)
-  * [Postgres](db/postgressql.md)
+  * [PostgreSQL](db/postgresql.md)
   * [SQLite](db/sqlite.md)
  
 [Docker](/docker/index.md)
