@@ -436,6 +436,20 @@ https://fedoramagazine.org/systemd-getting-a-grip-on-units/
 
 https://wiki.archlinux.org/index.php/Systemd_(Português)
 
+### Storage (HD/SSD)
+
+Verificar informações de disco:
+```
+# sudo hdparm -I -T /dev/sda
+# sudo hdparm -I -T /dev/sda
+```
+
+Teste de velocidade de leitura:
+```
+# hdparm -t -T /dev/sda
+```
+
+
 ### Watch
 Loop de execução de comando por timer definido. Útil para verificar alterações em tempo real:
 ```shell
