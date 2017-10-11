@@ -229,6 +229,13 @@ $ sudo trickle -vvv -d 10 -u 5 firefox
 ```
 Obs: velocidade em Kbytes
 
+Verificar gateways:
+```
+# netstat  -rn (para ver numerico)
+# netstat -r (para ver com nomes)
+- ou
+# ip route
+```
 ------
 
 ### NFS
