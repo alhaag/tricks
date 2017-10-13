@@ -53,6 +53,12 @@ $ su - postgres
 
 ## Comandos úteis
 
+Criação de usuário:
+```
+$ psql
+psql> CREATE USER meu_user WITH PASSWORD '123456' createdb;
+```
+
 ```
 \? Ajuda
 \d Definições (depende do escopo)
