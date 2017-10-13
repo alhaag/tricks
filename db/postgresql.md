@@ -31,6 +31,7 @@ Procedimentos de atualização de acordo com o salto de versão.
  
 ### Major version (ex: 9.5.9 -> 9.6.5)
 * Backup dos dados;
+* Backup de arquivos de configuração: formas de conexão (pg_hba.conf) e parâmetros para o diretório da nova versão (postgresql.conf).
 * Instalar a versão nova, sem remover a versão anterior;
 * Parar e desabilitar a versão anterior;
 * Habilitar e iniciar a versão nova;
