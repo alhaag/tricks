@@ -2,9 +2,11 @@
 
 Banco relacional minimalista baseado em arquivo.
 
-Na maior parte das vezes supre todas as necessidades.
+Na maior parte das vezes supre todas as necessidades e em muitos cenários possui tempos de resposta maiores que SGBDs como MySQL e PostgreSQL, Porém não é recomendado para cenários de alta concorrência de escrita.
 
-Não possui controle de acesso e usuários.
+Tem a limitação de não possuir controle de acesso e usuários.
+
+Documentação oficial: https://www.sqlite.org/
 
 ## Instalação
 
