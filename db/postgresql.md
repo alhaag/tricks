@@ -51,7 +51,7 @@ A administração deve ser realizada com o usuário postgres:
 $ su - postgres
 ```
 
-## Comandos úteis
+### Usuarios
 
 Criação de usuário:
 ```
@@ -59,10 +59,16 @@ $ psql
 psql> CREATE USER meu_user WITH PASSWORD '123456' createdb;
 ```
 
+### Table spaces
+
+## Comandos úteis
 ```
 \? Ajuda
 \d Definições (depende do escopo)
 psql -E Ativa echo das consultas realizadas internamente pelo SGBD a cada query
 pgsql$ show all; Exibe configurações carregadas
-
 ```
+
+## Tuning
+
+http://pgtune.leopard.in.ua/
