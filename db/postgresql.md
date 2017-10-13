@@ -36,12 +36,12 @@ Procedimentos de atualização de acordo com o salto de versão.
 * Habilitar e iniciar a versão nova;
 * Restaurar os dados na versão nova.
 
-** Observações**
+**Observações**
 Upgrade Major Version exigirá 3x o tamanho da base:
 
- 1 espaço da base antiga;
- 2 dump da base antiga;
- 3 espaço para a base na nova versão.
+ 1. espaço da base antiga;
+ 2. dump da base antiga;
+ 3. espaço para a base na nova versão.
 
 ## Administração
 
