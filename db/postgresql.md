@@ -20,6 +20,29 @@ $ sudo systemctl enable postgresql-9.6
 $ sudo systemctl restart postgresql-9.6
 ```
 
+## Atualização
+
+Procedimentos de atualização de acordo com o salto de versão.
+
+### Minor version (ex: 9.5.8 -> 9.5.9)
+ * Instalar repositório da nova versão;
+ * Instalar nova versão;
+ * Reiniciar serviço;
+ 
+### Major version (ex: 9.5.9 -> 9.6.5)
+* Backup dos dados;
+* Instalar a versão nova, sem remover a versão anterior;
+* Parar e desabilitar a versão anterior;
+* Habilitar e iniciar a versão nova;
+* Restaurar os dados na versão nova.
+
+** Observações**
+Upgrade Major Version exigirá 3x o tamanho da base:
+
+ 1 espaço da base antiga;
+ 2 dump da base antiga;
+ 3 espaço para a base na nova versão.
+
 ## Administração
 
 A administração deve ser realizada com o usuário postgres:
