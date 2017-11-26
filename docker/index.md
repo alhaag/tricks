@@ -39,7 +39,7 @@ $ docker rmi <imagem_id>
 
 Remover todas as imagens:
 ```shell
-$ docker rmi $(docker images -q)
+$ docker rmi $(docker images -q -a)
 ```
 
 ### Operações sobre containers
