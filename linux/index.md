@@ -365,6 +365,12 @@ Liberar acesso por chave ssh
 ```shell
 $ ssh-copy-id <user>@<ip>
 ```
+
+Abrir interface gráfica por ssh:
+```
+$ ssh user@host "DISPLAY=:0 nohup firefox"
+```
+
 ---
 
 ## SystemD
