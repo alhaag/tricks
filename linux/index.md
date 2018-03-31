@@ -501,7 +501,9 @@ exit $?
  * 5: Multi-user, network enabled, graphical mode
  * 6: System reboot
 
+### Inicializar serviço com o sistema
 
+Utilizar o utilitário **ntsysv**, será aberta uma janela exibindo as opções de serviços para serem inicializados com o sistema.
 
 ## SSH
 Gerar uma chave RSA local:
