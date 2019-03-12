@@ -54,6 +54,14 @@ $ curl -d "paramn1=value&paramn2=value" http://host/resource
 
 ---
 
+## DNS
+Verificar propagação de record TXT:
+```shell
+$ dig -t txt <domain>
+```
+
+---
+
 ## File system
 
 Listar dispositivos de armazenamento:
