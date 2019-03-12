@@ -20,6 +20,7 @@ Data bases
 [Linux / Shell](linux/index.md)
   * [AWK](linux/index.md#awk)
   * [curl](linux/index.md#curl)
+  * [DNS](linux/index.md#dns)
   * [File system](linux/index.md#file-system)
   * [ISO](linux/index.md#iso)
   * [Processos](linux/index.md#processos)
