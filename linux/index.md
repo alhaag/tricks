@@ -689,6 +689,83 @@ Instalar dependências necessárias:
 ```
 ---
 
+## NTP
+
+### chronyd
+
+Configuração de servidores NTP é realizada em **/etc/chrony.conf**. Ex:
+```
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (http://www.pool.ntp.org/join.html).
+server 0.centos.pool.ntp.org iburst
+server 1.centos.pool.ntp.org iburst
+server 2.centos.pool.ntp.org iburst
+server 3.centos.pool.ntp.org iburst
+
+# Record the rate at which the system clock gains/losses time.
+driftfile /var/lib/chrony/drift
+
+# Allow the system clock to be stepped in the first three updates
+# if its offset is larger than 1 second.
+makestep 1.0 3
+
+# Enable kernel synchronization of the real-time clock (RTC).
+rtcsync
+
+# Enable hardware timestamping on all interfaces that support it.
+#hwtimestamp *
+
+# Increase the minimum number of selectable sources required to adjust
+# the system clock.
+#minsources 2
+
+# Allow NTP client access from local network.
+#allow 192.168.0.0/16
+
+# Serve time even if not synchronized to a time source.
+#local stratum 10
+
+# Specify file containing keys for NTP authentication.
+#keyfile /etc/chrony.keys
+
+# Specify directory for log files.
+logdir /var/log/chrony
+
+# Select which information is logged.
+#log measurements statistics tracking
+```
+
+Para verificar se o chrony está sincronizado, use os comandos tracking. Ex:
+```
+# chronyc tracking
+Reference ID    : 8F6BE5D3 (lrte.ntp.ifsc.usp.br)
+Stratum         : 2
+Ref time (UTC)  : Mon Jun 17 17:38:40 2019
+System time     : 0.000026156 seconds slow of NTP time
+Last offset     : -0.000068035 seconds
+RMS offset      : 0.000088043 seconds
+Frequency       : 4.356 ppm slow
+Residual freq   : -0.001 ppm
+Skew            : 0.055 ppm
+Root delay      : 0.011678920 seconds
+Root dispersion : 0.000195025 seconds
+Update interval : 1038.5 seconds
+Leap status     : Normal
+```
+Execute o comando chronyc sources para exibir informações sobre as fontes de tempo atuais que o chronyd está acessando. Ex:
+```
+# chronyc sources
+210 Number of sources = 4
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* lrte.ntp.ifsc.usp.br          1  10   377   274   -334us[ -402us] +/- 5870us
+^+ ntp1.ifsc.usp.br              2  10   377   858  -1051ns[  -65us] +/- 6065us
+^- ntp4.rbx-fr.hosts.301-mo>     2  10   377   919    -97us[ -161us] +/-  135ms
+^- b.ntp.br                      2  10   377   235   -962us[ -962us] +/-   45ms
+```
+
+---
+
 ## ZIP
 Vizualizar conteúdo:
 ```shell
