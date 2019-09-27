@@ -39,6 +39,15 @@ The result should be your master is now essentially seotweaks.
 
 (-s ours is short for --strategy=ours)
 
+### Rename branch (local and remote)
+
+```
+git checkout <old_name>
+git branch -m <new_name>
+git push origin --delete <old_name>
+git push origin -u <new_name>
+```
+
 ### TAG
 
 View TAGs:
