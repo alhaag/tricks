@@ -48,6 +48,15 @@ git push origin --delete <old_name>
 git push origin -u <new_name>
 ```
 
+### Delete branch (local)
+```
+git branch -d <branch_name>
+```
+### Delete branch (remote)
+```
+git push <remote_name> --delete <branch_name>
+```
+
 ### TAG
 
 View TAGs:
