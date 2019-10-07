@@ -28,6 +28,11 @@ Revert file modifications:
 $ git checkout file.txt 
 ```
 
+Revert last local commit:
+```
+$ git reset HEAD~
+```
+
 Reset all local changes and commits of branch to current remote:
 ```
 $ git reset --hard <remote_name>/<branch_name>
