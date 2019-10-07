@@ -27,13 +27,19 @@ Revert file modifications:
 ```
 $ git checkout file.txt 
 ```
+
+Reset all local changes and commits of branch to current remote:
+```
+$ git reset --hard <remote_name>/<branch_name>
+```
+
 ### Transfer all branch to master
 
 ```
-git checkout seotweaks
-git merge -s ours master
-git checkout master
-git merge seotweaks
+$ git checkout seotweaks
+$ git merge -s ours master
+$ git checkout master
+$ git merge seotweaks
 ```
 The result should be your master is now essentially seotweaks.
 
@@ -42,19 +48,19 @@ The result should be your master is now essentially seotweaks.
 ### Rename branch (local and remote)
 
 ```
-git checkout <old_name>
-git branch -m <new_name>
-git push origin --delete <old_name>
-git push origin -u <new_name>
+$ git checkout <old_name>
+$ git branch -m <new_name>
+$ git push origin --delete <old_name>
+$ git push origin -u <new_name>
 ```
 
 ### Delete branch (local)
 ```
-git branch -d <branch_name>
+$ git branch -d <branch_name>
 ```
 ### Delete branch (remote)
 ```
-git push <remote_name> --delete <branch_name>
+$ git push <remote_name> --delete <branch_name>
 ```
 
 ### TAG
