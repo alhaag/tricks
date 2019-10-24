@@ -50,6 +50,16 @@ The result should be your master is now essentially seotweaks.
 
 (-s ours is short for --strategy=ours)
 
+### Merge squash
+
+```
+$ git checkout master
+$ git merge --squash <branch_name>
+$ git commit -v
+```
+
+-v (--verbose) merge all previous branch messages into the current commit
+
 ### Rename branch (local and remote)
 
 ```
